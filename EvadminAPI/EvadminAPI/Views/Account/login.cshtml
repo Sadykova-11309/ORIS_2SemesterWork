@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link rel="icon" src="../images/favicon.ico"> 
+
+    <title>EV Admin - Log in </title>
+  
+	<!-- Vendors Style-->
+	<link rel="stylesheet" href="../src/css/vendors_css.css">
+	  
+	<!-- Style-->  
+	<link rel="stylesheet" href="../src/css/style.css">
+	<link rel="stylesheet" href="../src/css/skin_color.css">	
+
+</head>
+	
+<body class="hold-transition theme-primary bg-img" style="background-image: url(../../../images/auth-bg/bg-16.jpg)">
+	
+	<div class="container h-p100">
+		<div class="row align-items-center justify-content-md-center h-p100">	
+			
+			<div class="col-12">
+				<div class="row justify-content-center g-0">
+					<div class="col-lg-5 col-md-5 col-12">
+						<div class="bg-white rounded10 shadow-lg">
+							<div class="content-top-agile p-20 pb-0">
+								<h2 class="text-primary fw-600">Let's Get Started</h2>
+								<p class="mb-0 text-fade">Sign in to continue to EV Admin.</p>							
+							</div>
+							<div class="p-40">
+                                <form id="loginForm">
+                                    <!-- CSRF токен -->
+                                    @Html.AntiForgeryToken()
+
+                                    <!-- Контейнер для ошибок -->
+                                    <div id="errorContainer" class="alert alert-danger d-none"></div>
+
+                                    <div class="form-group">
+                                        <div class="input-group mb-3">
+                                            <span class="input-group-text bg-transparent">
+                                                <i class="text-fade ti-user"></i>
+                                            </span>
+                                            <input name="Email" type="email" autofocus
+                                                   class="form-control ps-15 bg-transparent"
+                                                   placeholder="Email" id="email" required>
+                                        </div>
+                                        <span class="text-danger small" id="emailError"></span>
+                                    </div>
+
+                                    <div class="form-group">
+                                        <div class="input-group mb-3">
+                                            <span class="input-group-text bg-transparent">
+                                                <i class="text-fade ti-lock"></i>
+                                            </span>
+                                            <input name="Password" type="password"
+                                                   class="form-control ps-15 bg-transparent"
+                                                   placeholder="***" id="password" required>
+                                        </div>
+                                        <span class="text-danger small" id="passwordError"></span>
+                                    </div>
+
+                                    <div class="mb-3 form-check">
+                                        <input type="checkbox" class="form-check-input" id="rememberMe">
+                                        <label class="form-check-label" for="rememberMe">Remember me</label>
+                                    </div>
+
+                                    <div class="row align-items-center">
+                                        <div class="col-6">
+                                            <a href="#" class="text-primary fw-500 hover-primary">
+                                                Forgot password?
+                                            </a>
+                                        </div>
+                                        <div class="col-6 text-end">
+                                            <button type="submit" class="btn btn-primary w-100" id="submitBtn">SIGN IN</button>
+                                        </div>
+                                    </div>
+                                </form>
+								<div class="text-center">
+									<p class="mt-15 mb-0 text-fade">
+                                        Don't have an account? <a href="/Account/register"> Register </a>
+									</p>
+								</div>
+							</div>						
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+
+	<!-- Vendor JS -->
+	<script src="../src/js/vendors.min.js"></script>
+	<script src="../src/js/pages/chat-popup.js"></script>
+    <script src="../../../assets/icons/feather-icons/feather.min.js"></script>
+    
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            const loginForm = document.getElementById('loginForm');
+            const submitBtn = document.getElementById('submitBtn');
+            const errorContainer = document.getElementById('errorContainer');
+            
+            // Обработка CSRF токена
+            const getCsrfToken = () => {
+                return document.querySelector('input[name="__RequestVerificationToken"]').value;
+            };
+            
+            // Валидация формы
+            const validateForm = () => {
+                let isValid = true;
+                const email = document.getElementById('email').value;
+                const password = document.getElementById('password').value;
+                
+                // Сброс предыдущих ошибок
+                document.getElementById('emailError').textContent = '';
+                document.getElementById('passwordError').textContent = '';
+                errorContainer.classList.add('d-none');
+                
+                // // Валидация email
+                // if (!email) {
+                //     document.getElementById('emailError').textContent = 'Email is required';
+                //     isValid = false;
+                // } else if (!/^\\S+собака\\S+\\.\\S+$/.test(email)) { 
+                //  document.getElementById('emailError').textContent = 'Invalid email format';
+                //  isValid = false;
+                // }
+                
+                // Валидация пароля
+                if (!password) {
+                    document.getElementById('passwordError').textContent = 'Password is required';
+                    isValid = false;
+                } else if (password.length < 1) {
+                    document.getElementById('passwordError').textContent = 'Password must be at least 6 characters';
+                    isValid = false;
+                }
+                
+                return isValid;
+            };
+            
+            // Обработка отправки формы
+            loginForm.addEventListener('submit', async (e) => {
+                e.preventDefault();
+                
+                if (!validateForm()) return;
+                
+                const originalBtnText = submitBtn.innerHTML;
+                submitBtn.innerHTML = 'Loading...';
+                submitBtn.disabled = true;
+                
+                const userData = {
+                    Email: document.getElementById('email').value,
+                    Password: document.getElementById('password').value,
+                    // RememberMe: document.getElementById('rememberMe').checked
+                };
+                
+                try {
+                    const response = await fetch('/Account/Login', {
+                        method: 'POST',
+                        headers: {
+                            'Content-Type': 'application/json',
+                            'RequestVerificationToken': getCsrfToken()
+                        },
+                        body: JSON.stringify(userData)
+                    });
+                    
+                    if (response.ok) {
+                        window.location.href = '/Home/Dashboard';
+                    } else {
+                        const contentType = response.headers.get('content-type');
+                        let error = 'Login failed. Please try again.';
+                        
+                        if (contentType && contentType.includes('application/json')) {
+                            const data = await response.json();
+                            error = data.message || error;
+                        } else {
+                            error = await response.text() || error;
+                        }
+                        
+                        errorContainer.textContent = error;
+                        errorContainer.classList.remove('d-none');
+                    }
+                } catch (error) {
+                    console.error('Login error:', error);
+                    errorContainer.textContent = 'Network error. Please try again later.';
+                    errorContainer.classList.remove('d-none');
+                } finally {
+                    submitBtn.innerHTML = originalBtnText;
+                    submitBtn.disabled = false;
+                }
+            });
+        });
+    </script>
+
+</body>
+</html>

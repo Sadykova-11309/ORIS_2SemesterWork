@@ -1,0 +1,202 @@
+.box {
+  margin-bottom: 20px;
+}
+
+.revenue-growth{
+  height: 284px;
+}
+.revenue-growth .reality-chart {
+  position: relative;
+  top: -50px;
+}
+.rtl .knob {
+    margin-left: 0;
+    margin-right: -116px;
+}
+
+.avatar-sm {
+    width: 59px;
+    height: 59px;
+    line-height: 29px;
+    font-size: 0.7143rem;
+}
+.recent{
+
+  height:382px;
+}
+
+/*-----------Dashboard-3-----------*/
+
+.first-section .first-plan {
+    border-radius: 5px;
+    padding-bottom: 20px;
+    position: relative;
+    overflow: hidden;
+}
+.first-section .first-plan .bg-img {
+    width: 30%;
+    position: absolute;
+    opacity: 0.1;
+    transform: rotate(0deg);
+    right: 0px;
+    bottom: -2px;
+}
+.rtl .first-section .first-plan {
+    border-radius: 5px;
+    padding-bottom: 20px;
+    position: relative;
+    overflow: hidden;
+}
+.rtl .first-section .first-plan .bg-img {
+    width: 30%;
+    position: absolute;
+    opacity: 0.1;
+    transform: rotate(0deg);
+    left: 0px;
+    right: auto;
+    bottom: -2px;
+}
+
+
+.chargingstation
+{
+  height:446px;
+}
+
+hr {
+  color: #D3D3D3;
+}
+
+.smartcharging
+{
+  height:391px;
+}
+
+.button1
+{
+  background-color: white;
+  color: grey;
+}
+
+.button1:hover
+{
+  background-color: #0052cc;
+  color:white;
+}
+
+.activecharging
+{
+  height:130px;
+}
+.newusers
+{
+  height:130px;
+}
+
+.selectcars
+{
+  height:225px;
+}
+
+.availablestation
+{
+  color:#4B0082;
+}
+
+.occupiedstation
+{
+  color:#ff9920;
+}
+
+.totalbooked
+{
+  color:#04a08b;
+}
+
+.dallasboxmainmini
+{
+  height:504px;
+}
+.secondbox
+{
+  height:81px;
+}
+
+@media only screen and (max-width: 1600px) {
+  .carflag {
+    height:46px;
+  }
+  .dallasbox {
+    height:504px;
+  }
+  .occupancy {
+    height:191px;
+  }
+
+}
+
+@media only screen and (max-width: 1440px) {
+  .dallasbox {
+    height:499px;
+  }
+}
+
+
+@media only screen and (max-width: 1399px) {
+  .dallasbox {
+    height:auto;
+  }
+  .occupancy {
+    height:192px;
+  }
+}
+
+@media only screen and (max-width: 1194px) {
+  .carflag {
+    height:48px;
+  }
+  .income
+  {
+    height:165px;
+  }
+  .occupancy {
+    height:auto;
+  }
+  .activecharging
+  {
+  height:124px;
+  }
+  .newusers
+  {
+  height:124px;
+  }
+
+}
+
+@media only screen and (max-width: 1112px) {
+  .income
+  {
+    height:164px;
+  }
+  .activecharging
+  {
+  height:122px;
+  }
+  .newusers
+  {
+  height:122px;
+  }
+  .dallasboxmainmini
+  {
+  height:auto;
+  }
+
+}
+
+@media only screen and (max-width: 475px) {
+  .teslabutton {
+
+    margin: 10px 0px;
+    
+      }
+}

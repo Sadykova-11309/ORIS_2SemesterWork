@@ -1,0 +1,14 @@
+C:\Users\house\Documents\EvadminAPI\EvadminAPI.DataBase\bin\Debug\net8.0\EvadminAPI.DataBase.deps.json
+C:\Users\house\Documents\EvadminAPI\EvadminAPI.DataBase\bin\Debug\net8.0\EvadminAPI.DataBase.runtimeconfig.json
+C:\Users\house\Documents\EvadminAPI\EvadminAPI.DataBase\bin\Debug\net8.0\EvadminAPI.DataBase.dll
+C:\Users\house\Documents\EvadminAPI\EvadminAPI.DataBase\bin\Debug\net8.0\EvadminAPI.DataBase.pdb
+C:\Users\house\Documents\EvadminAPI\EvadminAPI.DataBase\obj\Debug\net8.0\EvadminAPI.DataBase.csproj.AssemblyReference.cache
+C:\Users\house\Documents\EvadminAPI\EvadminAPI.DataBase\obj\Debug\net8.0\EvadminAPI.DataBase.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\house\Documents\EvadminAPI\EvadminAPI.DataBase\obj\Debug\net8.0\EvadminAPI.DataBase.AssemblyInfoInputs.cache
+C:\Users\house\Documents\EvadminAPI\EvadminAPI.DataBase\obj\Debug\net8.0\EvadminAPI.DataBase.AssemblyInfo.cs
+C:\Users\house\Documents\EvadminAPI\EvadminAPI.DataBase\obj\Debug\net8.0\EvadminAPI.DataBase.csproj.CoreCompileInputs.cache
+C:\Users\house\Documents\EvadminAPI\EvadminAPI.DataBase\obj\Debug\net8.0\EvadminAPI.DataBase.dll
+C:\Users\house\Documents\EvadminAPI\EvadminAPI.DataBase\obj\Debug\net8.0\refint\EvadminAPI.DataBase.dll
+C:\Users\house\Documents\EvadminAPI\EvadminAPI.DataBase\obj\Debug\net8.0\EvadminAPI.DataBase.pdb
+C:\Users\house\Documents\EvadminAPI\EvadminAPI.DataBase\obj\Debug\net8.0\EvadminAPI.DataBase.genruntimeconfig.cache
+C:\Users\house\Documents\EvadminAPI\EvadminAPI.DataBase\obj\Debug\net8.0\ref\EvadminAPI.DataBase.dll

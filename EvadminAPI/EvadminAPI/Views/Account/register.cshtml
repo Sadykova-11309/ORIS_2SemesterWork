@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link rel="icon" href="https://ev-admin-dashboard-template.multipurposethemes.com/bs5/images/favicon.ico">
+
+    <title>EV Admin - Registration </title>
+  
+	<!-- Vendors Style-->
+	<link rel="stylesheet" href="../src/css/vendors_css.css">
+	  
+	<!-- Style-->  
+	<link rel="stylesheet" href="../src/css/style.css">
+	<link rel="stylesheet" href="../src/css/skin_color.css">	
+
+</head>
+
+<body class="hold-transition theme-primary bg-img" style="background-image: url(../../../images/auth-bg/bg-16.jpg)">
+	
+	<div class="container h-p100">
+		<div class="row align-items-center justify-content-md-center h-p100">
+			
+			<div class="col-12">
+				<div class="row justify-content-center g-0">
+					<div class="col-lg-5 col-md-5 col-12">
+						<div class="bg-white rounded10 shadow-lg">
+							<div class="content-top-agile p-20 pb-0">
+								<h2 class="text-primary fw-600">Get started with Us</h2>
+								<p class="mb-0 text-fade">Register a new membership</p>							
+							</div>
+							<div class="p-40">
+                                <form id="registerForm">
+                                    
+                                    <!-- Контейнер для общих ошибок -->
+                                    <div id="errorContainer" class="alert alert-danger d-none"></div>
+
+                                    <div class="form-group">
+                                        <div class="input-group mb-3">
+                                            <span class="input-group-text bg-transparent">
+                                                <i class="text-fade ti-email"></i>
+                                            </span>
+                                            <input name="Email" type="email" id="email"
+                                                   class="form-control ps-15 bg-transparent"
+                                                   placeholder="Email" required>
+                                        </div>
+                                        <span id="emailError" class="text-danger small"></span>
+                                    </div>
+
+                                    <div class="form-group">
+                                        <div class="input-group mb-3">
+                                            <span class="input-group-text bg-transparent">
+                                                <i class="text-fade ti-lock"></i>
+                                            </span>
+                                            <input name="Password" type="password" id="password"
+                                                   class="form-control ps-15 bg-transparent"
+                                                   placeholder="Password" required>
+                                        </div>
+                                        <span id="passwordError" class="text-danger small"></span>
+                                    </div>
+
+                                    <div class="form-group">
+                                        <div class="input-group mb-3">
+                                            <span class="input-group-text bg-transparent">
+                                                <i class="text-fade ti-lock"></i>
+                                            </span>
+                                            <input name="ConfirmPassword" type="password" id="confirmPassword"
+                                                   class="form-control ps-15 bg-transparent"
+                                                   placeholder="Confirm Password" required>
+                                        </div>
+                                        <span id="confirmPasswordError" class="text-danger small"></span>
+                                    </div>
+
+                                    <div class="form-group">
+                                        <div class="input-group mb-3">
+                                            <span class="input-group-text bg-transparent">
+                                                <i class="text-fade ti-user"></i>
+                                            </span>
+                                            <input name="FullName" type="text" id="fullName"
+                                                   class="form-control ps-15 bg-transparent"
+                                                   placeholder="Full Name" required>
+                                        </div>
+                                        <span id="fullNameError" class="text-danger small"></span>
+                                    </div>
+                                    
+                                    <div class="mb-3 form-check">
+                                        <input name="AcceptTerms" type="checkbox" class="form-check-input" id="acceptTerms">
+                                        <label class="form-check-label" for="acceptTerms">
+                                            I agree to the <a href="#" class="text-primary">Terms</a>
+                                        </label>
+                                        <span id="termsError" class="text-danger small d-block"></span>
+                                    </div>
+
+                                    <div class="text-center">
+                                        <button type="submit" class="btn btn-primary w-100 mt-3" id="submitBtn">REGISTER</button>
+                                    </div>
+                                </form>
+								<div class="text-center">
+									<p class="mt-15 mb-0 text-fade">Already have an account?<a href="/Account/login"> Sign In</a></p>
+								</div>
+							</div>
+						</div>	
+					</div>
+				</div>
+			</div>			
+		</div>
+	</div>
+
+
+	<!-- Vendor JS -->
+	<script src="../src/js/vendors.min.js"></script>
+	<script src="../src/js/pages/chat-popup.js"></script> 
+    <script src="../../../assets/icons/feather-icons/feather.min.js"></script>	
+	
+	<!-- Registration Script -->
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            const registerForm = document.getElementById('registerForm');
+            const submitBtn = document.getElementById('submitBtn');
+            const errorContainer = document.getElementById('errorContainer');
+            
+            // Обработка CSRF токена
+            const getCsrfToken = () => {
+                return document.querySelector('input[name="__RequestVerificationToken"]').value;
+            };
+            
+            // Валидация формы
+            const validateForm = () => {
+                let isValid = true;
+                const email = document.getElementById('email').value;
+                const password = document.getElementById('password').value;
+                const confirmPassword = document.getElementById('confirmPassword').value;
+                const fullName = document.getElementById('fullName').value;
+                const acceptTerms = document.getElementById('acceptTerms').checked;
+                
+                // Сброс предыдущих ошибок
+                document.querySelectorAll('.text-danger').forEach(el => el.textContent = '');
+                errorContainer.classList.add('d-none');
+               
+                
+                // Валидация пароля
+                if (!password) {
+                    document.getElementById('passwordError').textContent = 'Password is required';
+                    isValid = false;
+                } else if (password.length < 6) {
+                    document.getElementById('passwordError').textContent = 'Password must be at least 6 characters';
+                    isValid = false;
+                }
+                
+                // Подтверждение пароля
+                if (!confirmPassword) {
+                    document.getElementById('confirmPasswordError').textContent = 'Please confirm password';
+                    isValid = false;
+                } else if (password !== confirmPassword) {
+                    document.getElementById('confirmPasswordError').textContent = 'Passwords do not match';
+                    isValid = false;
+                }
+                
+                // Полное имя
+                if (!fullName) {
+                    document.getElementById('fullNameError').textContent = 'Full name is required';
+                    isValid = false;
+                }
+                
+                // Принятие условий
+                if (!acceptTerms) {
+                    document.getElementById('termsError').textContent = 'You must accept the terms';
+                    isValid = false;
+                }
+                
+                return isValid;
+            };
+            
+            // Обработка отправки формы
+            registerForm.addEventListener('submit', async (e) => {
+                e.preventDefault();
+                
+                if (!validateForm()) return;
+                
+                const originalBtnText = submitBtn.innerHTML;
+                submitBtn.innerHTML = 'Loading...';
+                submitBtn.disabled = true;
+                
+                const userData = {
+                    Email: document.getElementById('email').value,
+                    Password: document.getElementById('password').value,
+                    FullName: document.getElementById('fullName').value,
+                    AcceptTerms: document.getElementById('acceptTerms').checked
+                };
+                
+                try {
+                    const response = await fetch('/Account/register', {  // Исправлено на строчные буквы
+                        method: 'POST',
+                        headers: {
+                            'Content-Type': 'application/json',
+                            'X-CSRF-Token': getCsrfToken()
+                        },
+                        body: JSON.stringify(userData)
+                    });
+                    
+                    // Успешный ответ (200-299)
+                    if (response.ok) {
+                        const responseData = await response.text();
+                        
+                        // Проверяем, не вернул ли сервер сообщение об ошибке
+                        if (responseData && responseData.trim() !== "") {
+                            errorContainer.textContent = responseData;
+                            errorContainer.classList.remove('d-none');
+                        } else {
+                            window.location.href = '/Account/Login';
+                        }
+                    } 
+                    // Ошибка (400-599)
+                    else {
+                        const contentType = response.headers.get('content-type');
+                        let errorMessage = 'Registration failed. Please try again.';
+                        
+                        if (contentType && contentType.includes('application/json')) {
+                            const data = await response.json();
+                            errorMessage = data.message || data || errorMessage;
+                        } else {
+                            errorMessage = await response.text() || errorMessage;
+                        }
+                        
+                        errorContainer.textContent = errorMessage;
+                        errorContainer.classList.remove('d-none');
+                    }
+                } catch (error) {
+                    console.error('Registration error:', error);
+                    errorContainer.textContent = 'Network error. Please try again later.';
+                    errorContainer.classList.remove('d-none');
+                } finally {
+                    submitBtn.innerHTML = originalBtnText;
+                    submitBtn.disabled = false;
+                }
+            });
+        });
+    </script>
+</body>
+</html>
