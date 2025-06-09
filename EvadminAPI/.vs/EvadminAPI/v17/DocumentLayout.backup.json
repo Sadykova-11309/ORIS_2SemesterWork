@@ -1,49 +1,49 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "C:\\Users\\house\\Documents\\EvadminAPI\\",
+  "WorkspaceRootPath": "C:\\Users\\house\\Documents\\GitHub\\ORIS_2SemesterWork\\EvadminAPI\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{22C67276-31DE-43A6-838B-30FA20047A76}|EvadminAPI\\EvadminAPI.csproj|c:\\users\\house\\documents\\evadminapi\\evadminapi\\views\\account\\register.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "AbsoluteMoniker": "D:0:0:{22C67276-31DE-43A6-838B-30FA20047A76}|EvadminAPI\\EvadminAPI.csproj|c:\\users\\house\\documents\\github\\oris_2semesterwork\\evadminapi\\evadminapi\\views\\account\\register.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
       "RelativeMoniker": "D:0:0:{22C67276-31DE-43A6-838B-30FA20047A76}|EvadminAPI\\EvadminAPI.csproj|solutionrelative:evadminapi\\views\\account\\register.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{22C67276-31DE-43A6-838B-30FA20047A76}|EvadminAPI\\EvadminAPI.csproj|c:\\users\\house\\documents\\evadminapi\\evadminapi\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{22C67276-31DE-43A6-838B-30FA20047A76}|EvadminAPI\\EvadminAPI.csproj|c:\\users\\house\\documents\\github\\oris_2semesterwork\\evadminapi\\evadminapi\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{22C67276-31DE-43A6-838B-30FA20047A76}|EvadminAPI\\EvadminAPI.csproj|solutionrelative:evadminapi\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{E9C03DC7-4866-47A5-B7EC-A4A4942DA16C}|EvadminAPI.Services\\EvadminAPI.Services.csproj|c:\\users\\house\\documents\\evadminapi\\evadminapi.services\\services\\userservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{E9C03DC7-4866-47A5-B7EC-A4A4942DA16C}|EvadminAPI.Services\\EvadminAPI.Services.csproj|c:\\users\\house\\documents\\github\\oris_2semesterwork\\evadminapi\\evadminapi.services\\services\\userservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{E9C03DC7-4866-47A5-B7EC-A4A4942DA16C}|EvadminAPI.Services\\EvadminAPI.Services.csproj|solutionrelative:evadminapi.services\\services\\userservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{94BD28F8-BC51-4E32-A43A-F7F247A3B1CE}|EvadminAPI.DataBase\\EvadminAPI.DataBase.csproj|c:\\users\\house\\documents\\evadminapi\\evadminapi.database\\myapplicationcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{94BD28F8-BC51-4E32-A43A-F7F247A3B1CE}|EvadminAPI.DataBase\\EvadminAPI.DataBase.csproj|c:\\users\\house\\documents\\github\\oris_2semesterwork\\evadminapi\\evadminapi.database\\myapplicationcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{94BD28F8-BC51-4E32-A43A-F7F247A3B1CE}|EvadminAPI.DataBase\\EvadminAPI.DataBase.csproj|solutionrelative:evadminapi.database\\myapplicationcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{94BD28F8-BC51-4E32-A43A-F7F247A3B1CE}|EvadminAPI.DataBase\\EvadminAPI.DataBase.csproj|c:\\users\\house\\documents\\evadminapi\\evadminapi.database\\models\\usermodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{94BD28F8-BC51-4E32-A43A-F7F247A3B1CE}|EvadminAPI.DataBase\\EvadminAPI.DataBase.csproj|c:\\users\\house\\documents\\github\\oris_2semesterwork\\evadminapi\\evadminapi.database\\models\\usermodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{94BD28F8-BC51-4E32-A43A-F7F247A3B1CE}|EvadminAPI.DataBase\\EvadminAPI.DataBase.csproj|solutionrelative:evadminapi.database\\models\\usermodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{94BD28F8-BC51-4E32-A43A-F7F247A3B1CE}|EvadminAPI.DataBase\\EvadminAPI.DataBase.csproj|c:\\users\\house\\documents\\evadminapi\\evadminapi.database\\configurations\\userconfiguration.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{94BD28F8-BC51-4E32-A43A-F7F247A3B1CE}|EvadminAPI.DataBase\\EvadminAPI.DataBase.csproj|c:\\users\\house\\documents\\github\\oris_2semesterwork\\evadminapi\\evadminapi.database\\configurations\\userconfiguration.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{94BD28F8-BC51-4E32-A43A-F7F247A3B1CE}|EvadminAPI.DataBase\\EvadminAPI.DataBase.csproj|solutionrelative:evadminapi.database\\configurations\\userconfiguration.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{22C67276-31DE-43A6-838B-30FA20047A76}|EvadminAPI\\EvadminAPI.csproj|c:\\users\\house\\documents\\evadminapi\\evadminapi\\authcheck\\auhtchecker.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{22C67276-31DE-43A6-838B-30FA20047A76}|EvadminAPI\\EvadminAPI.csproj|c:\\users\\house\\documents\\github\\oris_2semesterwork\\evadminapi\\evadminapi\\authcheck\\auhtchecker.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{22C67276-31DE-43A6-838B-30FA20047A76}|EvadminAPI\\EvadminAPI.csproj|solutionrelative:evadminapi\\authcheck\\auhtchecker.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{4C60E7E2-4402-4059-849B-1FEFCF33DDB3}|EvadminAPI.Contracts\\EvadminAPI.Contracts.csproj|c:\\users\\house\\documents\\evadminapi\\evadminapi.contracts\\contracts\\registercontract.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{4C60E7E2-4402-4059-849B-1FEFCF33DDB3}|EvadminAPI.Contracts\\EvadminAPI.Contracts.csproj|c:\\users\\house\\documents\\github\\oris_2semesterwork\\evadminapi\\evadminapi.contracts\\contracts\\registercontract.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{4C60E7E2-4402-4059-849B-1FEFCF33DDB3}|EvadminAPI.Contracts\\EvadminAPI.Contracts.csproj|solutionrelative:evadminapi.contracts\\contracts\\registercontract.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{22C67276-31DE-43A6-838B-30FA20047A76}|EvadminAPI\\EvadminAPI.csproj|c:\\users\\house\\documents\\evadminapi\\evadminapi\\views\\account\\login.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "AbsoluteMoniker": "D:0:0:{22C67276-31DE-43A6-838B-30FA20047A76}|EvadminAPI\\EvadminAPI.csproj|c:\\users\\house\\documents\\github\\oris_2semesterwork\\evadminapi\\evadminapi\\views\\account\\login.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
       "RelativeMoniker": "D:0:0:{22C67276-31DE-43A6-838B-30FA20047A76}|EvadminAPI\\EvadminAPI.csproj|solutionrelative:evadminapi\\views\\account\\login.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{22C67276-31DE-43A6-838B-30FA20047A76}|EvadminAPI\\EvadminAPI.csproj|c:\\users\\house\\documents\\evadminapi\\evadminapi\\controllers\\accountcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{22C67276-31DE-43A6-838B-30FA20047A76}|EvadminAPI\\EvadminAPI.csproj|c:\\users\\house\\documents\\github\\oris_2semesterwork\\evadminapi\\evadminapi\\controllers\\accountcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{22C67276-31DE-43A6-838B-30FA20047A76}|EvadminAPI\\EvadminAPI.csproj|solutionrelative:evadminapi\\controllers\\accountcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{22C67276-31DE-43A6-838B-30FA20047A76}|EvadminAPI\\EvadminAPI.csproj|c:\\users\\house\\documents\\evadminapi\\evadminapi\\views\\chat\\chat.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "AbsoluteMoniker": "D:0:0:{22C67276-31DE-43A6-838B-30FA20047A76}|EvadminAPI\\EvadminAPI.csproj|c:\\users\\house\\documents\\github\\oris_2semesterwork\\evadminapi\\evadminapi\\views\\chat\\chat.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
       "RelativeMoniker": "D:0:0:{22C67276-31DE-43A6-838B-30FA20047A76}|EvadminAPI\\EvadminAPI.csproj|solutionrelative:evadminapi\\views\\chat\\chat.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     }
   ],
@@ -76,76 +76,71 @@
               "$type": "Document",
               "DocumentIndex": 1,
               "Title": "Program.cs",
-              "DocumentMoniker": "C:\\Users\\house\\Documents\\EvadminAPI\\EvadminAPI\\Program.cs",
+              "DocumentMoniker": "C:\\Users\\house\\Documents\\GitHub\\ORIS_2SemesterWork\\EvadminAPI\\EvadminAPI\\Program.cs",
               "RelativeDocumentMoniker": "EvadminAPI\\Program.cs",
-              "ToolTip": "C:\\Users\\house\\Documents\\EvadminAPI\\EvadminAPI\\Program.cs",
+              "ToolTip": "C:\\Users\\house\\Documents\\GitHub\\ORIS_2SemesterWork\\EvadminAPI\\EvadminAPI\\Program.cs",
               "RelativeToolTip": "EvadminAPI\\Program.cs",
               "ViewState": "AgIAAAwAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-08T17:10:08.232Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-06-08T17:10:08.232Z"
             },
             {
               "$type": "Document",
               "DocumentIndex": 2,
               "Title": "UserService.cs",
-              "DocumentMoniker": "C:\\Users\\house\\Documents\\EvadminAPI\\EvadminAPI.Services\\Services\\UserService.cs",
+              "DocumentMoniker": "C:\\Users\\house\\Documents\\GitHub\\ORIS_2SemesterWork\\EvadminAPI\\EvadminAPI.Services\\Services\\UserService.cs",
               "RelativeDocumentMoniker": "EvadminAPI.Services\\Services\\UserService.cs",
-              "ToolTip": "C:\\Users\\house\\Documents\\EvadminAPI\\EvadminAPI.Services\\Services\\UserService.cs",
+              "ToolTip": "C:\\Users\\house\\Documents\\GitHub\\ORIS_2SemesterWork\\EvadminAPI\\EvadminAPI.Services\\Services\\UserService.cs",
               "RelativeToolTip": "EvadminAPI.Services\\Services\\UserService.cs",
               "ViewState": "AgIAACMAAAAAAAAAAAAgwE0AAAABAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-08T16:58:16.019Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-06-08T16:58:16.019Z"
             },
             {
               "$type": "Document",
               "DocumentIndex": 3,
               "Title": "MyApplicationContext.cs",
-              "DocumentMoniker": "C:\\Users\\house\\Documents\\EvadminAPI\\EvadminAPI.DataBase\\MyApplicationContext.cs",
+              "DocumentMoniker": "C:\\Users\\house\\Documents\\GitHub\\ORIS_2SemesterWork\\EvadminAPI\\EvadminAPI.DataBase\\MyApplicationContext.cs",
               "RelativeDocumentMoniker": "EvadminAPI.DataBase\\MyApplicationContext.cs",
-              "ToolTip": "C:\\Users\\house\\Documents\\EvadminAPI\\EvadminAPI.DataBase\\MyApplicationContext.cs",
+              "ToolTip": "C:\\Users\\house\\Documents\\GitHub\\ORIS_2SemesterWork\\EvadminAPI\\EvadminAPI.DataBase\\MyApplicationContext.cs",
               "RelativeToolTip": "EvadminAPI.DataBase\\MyApplicationContext.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-08T16:58:08.037Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-06-08T16:58:08.037Z"
             },
             {
               "$type": "Document",
               "DocumentIndex": 4,
               "Title": "UserModel.cs",
-              "DocumentMoniker": "C:\\Users\\house\\Documents\\EvadminAPI\\EvadminAPI.DataBase\\Models\\UserModel.cs",
+              "DocumentMoniker": "C:\\Users\\house\\Documents\\GitHub\\ORIS_2SemesterWork\\EvadminAPI\\EvadminAPI.DataBase\\Models\\UserModel.cs",
               "RelativeDocumentMoniker": "EvadminAPI.DataBase\\Models\\UserModel.cs",
-              "ToolTip": "C:\\Users\\house\\Documents\\EvadminAPI\\EvadminAPI.DataBase\\Models\\UserModel.cs",
+              "ToolTip": "C:\\Users\\house\\Documents\\GitHub\\ORIS_2SemesterWork\\EvadminAPI\\EvadminAPI.DataBase\\Models\\UserModel.cs",
               "RelativeToolTip": "EvadminAPI.DataBase\\Models\\UserModel.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-08T16:58:02.23Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-06-08T16:58:02.23Z"
             },
             {
               "$type": "Document",
               "DocumentIndex": 5,
               "Title": "UserConfiguration.cs",
-              "DocumentMoniker": "C:\\Users\\house\\Documents\\EvadminAPI\\EvadminAPI.DataBase\\Configurations\\UserConfiguration.cs",
+              "DocumentMoniker": "C:\\Users\\house\\Documents\\GitHub\\ORIS_2SemesterWork\\EvadminAPI\\EvadminAPI.DataBase\\Configurations\\UserConfiguration.cs",
               "RelativeDocumentMoniker": "EvadminAPI.DataBase\\Configurations\\UserConfiguration.cs",
-              "ToolTip": "C:\\Users\\house\\Documents\\EvadminAPI\\EvadminAPI.DataBase\\Configurations\\UserConfiguration.cs",
+              "ToolTip": "C:\\Users\\house\\Documents\\GitHub\\ORIS_2SemesterWork\\EvadminAPI\\EvadminAPI.DataBase\\Configurations\\UserConfiguration.cs",
               "RelativeToolTip": "EvadminAPI.DataBase\\Configurations\\UserConfiguration.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-08T16:57:55.863Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-06-08T16:57:55.863Z"
             },
             {
               "$type": "Document",
               "DocumentIndex": 0,
               "Title": "register.cshtml",
-              "DocumentMoniker": "C:\\Users\\house\\Documents\\EvadminAPI\\EvadminAPI\\Views\\Account\\register.cshtml",
+              "DocumentMoniker": "C:\\Users\\house\\Documents\\GitHub\\ORIS_2SemesterWork\\EvadminAPI\\EvadminAPI\\Views\\Account\\register.cshtml",
               "RelativeDocumentMoniker": "EvadminAPI\\Views\\Account\\register.cshtml",
-              "ToolTip": "C:\\Users\\house\\Documents\\EvadminAPI\\EvadminAPI\\Views\\Account\\register.cshtml",
+              "ToolTip": "C:\\Users\\house\\Documents\\GitHub\\ORIS_2SemesterWork\\EvadminAPI\\EvadminAPI\\Views\\Account\\register.cshtml",
               "RelativeToolTip": "EvadminAPI\\Views\\Account\\register.cshtml",
-              "ViewState": "AgIAAGwAAAAAAAAAAAAAAIUAAABLAAAAAAAAAA==",
+              "ViewState": "AgIAALQAAAAAAAAAAAAAAMAAAAA+AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
               "WhenOpened": "2025-06-08T16:43:07.779Z",
               "EditorCaption": ""
@@ -154,66 +149,61 @@
               "$type": "Document",
               "DocumentIndex": 6,
               "Title": "AuhtChecker.cs",
-              "DocumentMoniker": "C:\\Users\\house\\Documents\\EvadminAPI\\EvadminAPI\\AuthCheck\\AuhtChecker.cs",
+              "DocumentMoniker": "C:\\Users\\house\\Documents\\GitHub\\ORIS_2SemesterWork\\EvadminAPI\\EvadminAPI\\AuthCheck\\AuhtChecker.cs",
               "RelativeDocumentMoniker": "EvadminAPI\\AuthCheck\\AuhtChecker.cs",
-              "ToolTip": "C:\\Users\\house\\Documents\\EvadminAPI\\EvadminAPI\\AuthCheck\\AuhtChecker.cs",
+              "ToolTip": "C:\\Users\\house\\Documents\\GitHub\\ORIS_2SemesterWork\\EvadminAPI\\EvadminAPI\\AuthCheck\\AuhtChecker.cs",
               "RelativeToolTip": "EvadminAPI\\AuthCheck\\AuhtChecker.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAAiAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-08T16:57:07.014Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-06-08T16:57:07.014Z"
             },
             {
               "$type": "Document",
               "DocumentIndex": 7,
               "Title": "RegisterContract.cs",
-              "DocumentMoniker": "C:\\Users\\house\\Documents\\EvadminAPI\\EvadminAPI.Contracts\\Contracts\\RegisterContract.cs",
+              "DocumentMoniker": "C:\\Users\\house\\Documents\\GitHub\\ORIS_2SemesterWork\\EvadminAPI\\EvadminAPI.Contracts\\Contracts\\RegisterContract.cs",
               "RelativeDocumentMoniker": "EvadminAPI.Contracts\\Contracts\\RegisterContract.cs",
-              "ToolTip": "C:\\Users\\house\\Documents\\EvadminAPI\\EvadminAPI.Contracts\\Contracts\\RegisterContract.cs",
+              "ToolTip": "C:\\Users\\house\\Documents\\GitHub\\ORIS_2SemesterWork\\EvadminAPI\\EvadminAPI.Contracts\\Contracts\\RegisterContract.cs",
               "RelativeToolTip": "EvadminAPI.Contracts\\Contracts\\RegisterContract.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAAABAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-08T16:56:48.779Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-06-08T16:56:48.779Z"
             },
             {
               "$type": "Document",
               "DocumentIndex": 8,
               "Title": "login.cshtml",
-              "DocumentMoniker": "C:\\Users\\house\\Documents\\EvadminAPI\\EvadminAPI\\Views\\Account\\login.cshtml",
+              "DocumentMoniker": "C:\\Users\\house\\Documents\\GitHub\\ORIS_2SemesterWork\\EvadminAPI\\EvadminAPI\\Views\\Account\\login.cshtml",
               "RelativeDocumentMoniker": "EvadminAPI\\Views\\Account\\login.cshtml",
-              "ToolTip": "C:\\Users\\house\\Documents\\EvadminAPI\\EvadminAPI\\Views\\Account\\login.cshtml",
+              "ToolTip": "C:\\Users\\house\\Documents\\GitHub\\ORIS_2SemesterWork\\EvadminAPI\\EvadminAPI\\Views\\Account\\login.cshtml",
               "RelativeToolTip": "EvadminAPI\\Views\\Account\\login.cshtml",
               "ViewState": "AgIAAJAAAAAAAAAAAAAAAKgAAAAXAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-06-08T16:54:05.349Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-06-08T16:54:05.349Z"
             },
             {
               "$type": "Document",
               "DocumentIndex": 9,
               "Title": "AccountController.cs",
-              "DocumentMoniker": "C:\\Users\\house\\Documents\\EvadminAPI\\EvadminAPI\\Controllers\\AccountController.cs",
+              "DocumentMoniker": "C:\\Users\\house\\Documents\\GitHub\\ORIS_2SemesterWork\\EvadminAPI\\EvadminAPI\\Controllers\\AccountController.cs",
               "RelativeDocumentMoniker": "EvadminAPI\\Controllers\\AccountController.cs",
-              "ToolTip": "C:\\Users\\house\\Documents\\EvadminAPI\\EvadminAPI\\Controllers\\AccountController.cs",
+              "ToolTip": "C:\\Users\\house\\Documents\\GitHub\\ORIS_2SemesterWork\\EvadminAPI\\EvadminAPI\\Controllers\\AccountController.cs",
               "RelativeToolTip": "EvadminAPI\\Controllers\\AccountController.cs",
               "ViewState": "AgIAABQAAAAAAAAAAAAswDMAAAAdAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-08T16:45:26.855Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-06-08T16:45:26.855Z"
             },
             {
               "$type": "Document",
               "DocumentIndex": 10,
               "Title": "chat.cshtml",
-              "DocumentMoniker": "C:\\Users\\house\\Documents\\EvadminAPI\\EvadminAPI\\Views\\Chat\\chat.cshtml",
+              "DocumentMoniker": "C:\\Users\\house\\Documents\\GitHub\\ORIS_2SemesterWork\\EvadminAPI\\EvadminAPI\\Views\\Chat\\chat.cshtml",
               "RelativeDocumentMoniker": "EvadminAPI\\Views\\Chat\\chat.cshtml",
-              "ToolTip": "C:\\Users\\house\\Documents\\EvadminAPI\\EvadminAPI\\Views\\Chat\\chat.cshtml",
+              "ToolTip": "C:\\Users\\house\\Documents\\GitHub\\ORIS_2SemesterWork\\EvadminAPI\\EvadminAPI\\Views\\Chat\\chat.cshtml",
               "RelativeToolTip": "EvadminAPI\\Views\\Chat\\chat.cshtml",
               "ViewState": "AgIAAN4AAAAAAAAAAAAAANoAAAAeAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-06-08T16:38:39.84Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-06-08T16:38:39.84Z"
             }
           ]
         }

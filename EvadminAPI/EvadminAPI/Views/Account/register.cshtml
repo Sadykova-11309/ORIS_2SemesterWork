@@ -122,11 +122,6 @@
             const submitBtn = document.getElementById('submitBtn');
             const errorContainer = document.getElementById('errorContainer');
             
-            // Обработка CSRF токена
-            const getCsrfToken = () => {
-                return document.querySelector('input[name="__RequestVerificationToken"]').value;
-            };
-            
             // Валидация формы
             const validateForm = () => {
                 let isValid = true;
@@ -195,8 +190,7 @@
                     const response = await fetch('/Account/register', {  // Исправлено на строчные буквы
                         method: 'POST',
                         headers: {
-                            'Content-Type': 'application/json',
-                            'X-CSRF-Token': getCsrfToken()
+                            'Content-Type': 'application/json'
                         },
                         body: JSON.stringify(userData)
                     });

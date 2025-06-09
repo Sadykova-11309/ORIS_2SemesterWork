@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\house\\Documents\\EvadminAPI\\EvadminAPI\\EvadminAPI.csproj": {}
+    "C:\\Users\\house\\Documents\\GitHub\\ORIS_2SemesterWork\\EvadminAPI\\EvadminAPI\\EvadminAPI.csproj": {}
   },
   "projects": {
-    "C:\\Users\\house\\Documents\\EvadminAPI\\EvadminAPI.Contracts\\EvadminAPI.Contracts.csproj": {
+    "C:\\Users\\house\\Documents\\GitHub\\ORIS_2SemesterWork\\EvadminAPI\\EvadminAPI.Contracts\\EvadminAPI.Contracts.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\house\\Documents\\EvadminAPI\\EvadminAPI.Contracts\\EvadminAPI.Contracts.csproj",
+        "projectUniqueName": "C:\\Users\\house\\Documents\\GitHub\\ORIS_2SemesterWork\\EvadminAPI\\EvadminAPI.Contracts\\EvadminAPI.Contracts.csproj",
         "projectName": "EvadminAPI.Contracts",
-        "projectPath": "C:\\Users\\house\\Documents\\EvadminAPI\\EvadminAPI.Contracts\\EvadminAPI.Contracts.csproj",
+        "projectPath": "C:\\Users\\house\\Documents\\GitHub\\ORIS_2SemesterWork\\EvadminAPI\\EvadminAPI.Contracts\\EvadminAPI.Contracts.csproj",
         "packagesPath": "C:\\Users\\house\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\house\\Documents\\EvadminAPI\\EvadminAPI.Contracts\\obj\\",
+        "outputPath": "C:\\Users\\house\\Documents\\GitHub\\ORIS_2SemesterWork\\EvadminAPI\\EvadminAPI.Contracts\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -32,8 +32,8 @@
           "net8.0": {
             "targetAlias": "net8.0",
             "projectReferences": {
-              "C:\\Users\\house\\Documents\\EvadminAPI\\EvadminAPI.DataBase\\EvadminAPI.DataBase.csproj": {
-                "projectPath": "C:\\Users\\house\\Documents\\EvadminAPI\\EvadminAPI.DataBase\\EvadminAPI.DataBase.csproj"
+              "C:\\Users\\house\\Documents\\GitHub\\ORIS_2SemesterWork\\EvadminAPI\\EvadminAPI.DataBase\\EvadminAPI.DataBase.csproj": {
+                "projectPath": "C:\\Users\\house\\Documents\\GitHub\\ORIS_2SemesterWork\\EvadminAPI\\EvadminAPI.DataBase\\EvadminAPI.DataBase.csproj"
               }
             }
           }
@@ -79,14 +79,14 @@
         }
       }
     },
-    "C:\\Users\\house\\Documents\\EvadminAPI\\EvadminAPI.DataBase\\EvadminAPI.DataBase.csproj": {
+    "C:\\Users\\house\\Documents\\GitHub\\ORIS_2SemesterWork\\EvadminAPI\\EvadminAPI.DataBase\\EvadminAPI.DataBase.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\house\\Documents\\EvadminAPI\\EvadminAPI.DataBase\\EvadminAPI.DataBase.csproj",
+        "projectUniqueName": "C:\\Users\\house\\Documents\\GitHub\\ORIS_2SemesterWork\\EvadminAPI\\EvadminAPI.DataBase\\EvadminAPI.DataBase.csproj",
         "projectName": "EvadminAPI.DataBase",
-        "projectPath": "C:\\Users\\house\\Documents\\EvadminAPI\\EvadminAPI.DataBase\\EvadminAPI.DataBase.csproj",
+        "projectPath": "C:\\Users\\house\\Documents\\GitHub\\ORIS_2SemesterWork\\EvadminAPI\\EvadminAPI.DataBase\\EvadminAPI.DataBase.csproj",
         "packagesPath": "C:\\Users\\house\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\house\\Documents\\EvadminAPI\\EvadminAPI.DataBase\\obj\\",
+        "outputPath": "C:\\Users\\house\\Documents\\GitHub\\ORIS_2SemesterWork\\EvadminAPI\\EvadminAPI.DataBase\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -174,14 +174,14 @@
         }
       }
     },
-    "C:\\Users\\house\\Documents\\EvadminAPI\\EvadminAPI.Infrastucture\\EvadminAPI.Infrastucture.csproj": {
+    "C:\\Users\\house\\Documents\\GitHub\\ORIS_2SemesterWork\\EvadminAPI\\EvadminAPI.Infrastucture\\EvadminAPI.Infrastucture.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\house\\Documents\\EvadminAPI\\EvadminAPI.Infrastucture\\EvadminAPI.Infrastucture.csproj",
+        "projectUniqueName": "C:\\Users\\house\\Documents\\GitHub\\ORIS_2SemesterWork\\EvadminAPI\\EvadminAPI.Infrastucture\\EvadminAPI.Infrastucture.csproj",
         "projectName": "EvadminAPI.Infrastucture",
-        "projectPath": "C:\\Users\\house\\Documents\\EvadminAPI\\EvadminAPI.Infrastucture\\EvadminAPI.Infrastucture.csproj",
+        "projectPath": "C:\\Users\\house\\Documents\\GitHub\\ORIS_2SemesterWork\\EvadminAPI\\EvadminAPI.Infrastucture\\EvadminAPI.Infrastucture.csproj",
         "packagesPath": "C:\\Users\\house\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\house\\Documents\\EvadminAPI\\EvadminAPI.Infrastucture\\obj\\",
+        "outputPath": "C:\\Users\\house\\Documents\\GitHub\\ORIS_2SemesterWork\\EvadminAPI\\EvadminAPI.Infrastucture\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -202,8 +202,8 @@
           "net8.0": {
             "targetAlias": "net8.0",
             "projectReferences": {
-              "C:\\Users\\house\\Documents\\EvadminAPI\\EvadminAPI.DataBase\\EvadminAPI.DataBase.csproj": {
-                "projectPath": "C:\\Users\\house\\Documents\\EvadminAPI\\EvadminAPI.DataBase\\EvadminAPI.DataBase.csproj"
+              "C:\\Users\\house\\Documents\\GitHub\\ORIS_2SemesterWork\\EvadminAPI\\EvadminAPI.DataBase\\EvadminAPI.DataBase.csproj": {
+                "projectPath": "C:\\Users\\house\\Documents\\GitHub\\ORIS_2SemesterWork\\EvadminAPI\\EvadminAPI.DataBase\\EvadminAPI.DataBase.csproj"
               }
             }
           }
@@ -273,14 +273,14 @@
         }
       }
     },
-    "C:\\Users\\house\\Documents\\EvadminAPI\\EvadminAPI.Services\\EvadminAPI.Services.csproj": {
+    "C:\\Users\\house\\Documents\\GitHub\\ORIS_2SemesterWork\\EvadminAPI\\EvadminAPI.Services\\EvadminAPI.Services.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\house\\Documents\\EvadminAPI\\EvadminAPI.Services\\EvadminAPI.Services.csproj",
+        "projectUniqueName": "C:\\Users\\house\\Documents\\GitHub\\ORIS_2SemesterWork\\EvadminAPI\\EvadminAPI.Services\\EvadminAPI.Services.csproj",
         "projectName": "EvadminAPI.Services",
-        "projectPath": "C:\\Users\\house\\Documents\\EvadminAPI\\EvadminAPI.Services\\EvadminAPI.Services.csproj",
+        "projectPath": "C:\\Users\\house\\Documents\\GitHub\\ORIS_2SemesterWork\\EvadminAPI\\EvadminAPI.Services\\EvadminAPI.Services.csproj",
         "packagesPath": "C:\\Users\\house\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\house\\Documents\\EvadminAPI\\EvadminAPI.Services\\obj\\",
+        "outputPath": "C:\\Users\\house\\Documents\\GitHub\\ORIS_2SemesterWork\\EvadminAPI\\EvadminAPI.Services\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -301,14 +301,14 @@
           "net8.0": {
             "targetAlias": "net8.0",
             "projectReferences": {
-              "C:\\Users\\house\\Documents\\EvadminAPI\\EvadminAPI.Contracts\\EvadminAPI.Contracts.csproj": {
-                "projectPath": "C:\\Users\\house\\Documents\\EvadminAPI\\EvadminAPI.Contracts\\EvadminAPI.Contracts.csproj"
+              "C:\\Users\\house\\Documents\\GitHub\\ORIS_2SemesterWork\\EvadminAPI\\EvadminAPI.Contracts\\EvadminAPI.Contracts.csproj": {
+                "projectPath": "C:\\Users\\house\\Documents\\GitHub\\ORIS_2SemesterWork\\EvadminAPI\\EvadminAPI.Contracts\\EvadminAPI.Contracts.csproj"
               },
-              "C:\\Users\\house\\Documents\\EvadminAPI\\EvadminAPI.DataBase\\EvadminAPI.DataBase.csproj": {
-                "projectPath": "C:\\Users\\house\\Documents\\EvadminAPI\\EvadminAPI.DataBase\\EvadminAPI.DataBase.csproj"
+              "C:\\Users\\house\\Documents\\GitHub\\ORIS_2SemesterWork\\EvadminAPI\\EvadminAPI.DataBase\\EvadminAPI.DataBase.csproj": {
+                "projectPath": "C:\\Users\\house\\Documents\\GitHub\\ORIS_2SemesterWork\\EvadminAPI\\EvadminAPI.DataBase\\EvadminAPI.DataBase.csproj"
               },
-              "C:\\Users\\house\\Documents\\EvadminAPI\\EvadminAPI.Infrastucture\\EvadminAPI.Infrastucture.csproj": {
-                "projectPath": "C:\\Users\\house\\Documents\\EvadminAPI\\EvadminAPI.Infrastucture\\EvadminAPI.Infrastucture.csproj"
+              "C:\\Users\\house\\Documents\\GitHub\\ORIS_2SemesterWork\\EvadminAPI\\EvadminAPI.Infrastucture\\EvadminAPI.Infrastucture.csproj": {
+                "projectPath": "C:\\Users\\house\\Documents\\GitHub\\ORIS_2SemesterWork\\EvadminAPI\\EvadminAPI.Infrastucture\\EvadminAPI.Infrastucture.csproj"
               }
             }
           }
@@ -348,14 +348,14 @@
         }
       }
     },
-    "C:\\Users\\house\\Documents\\EvadminAPI\\EvadminAPI\\EvadminAPI.csproj": {
+    "C:\\Users\\house\\Documents\\GitHub\\ORIS_2SemesterWork\\EvadminAPI\\EvadminAPI\\EvadminAPI.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\house\\Documents\\EvadminAPI\\EvadminAPI\\EvadminAPI.csproj",
+        "projectUniqueName": "C:\\Users\\house\\Documents\\GitHub\\ORIS_2SemesterWork\\EvadminAPI\\EvadminAPI\\EvadminAPI.csproj",
         "projectName": "EvadminAPI",
-        "projectPath": "C:\\Users\\house\\Documents\\EvadminAPI\\EvadminAPI\\EvadminAPI.csproj",
+        "projectPath": "C:\\Users\\house\\Documents\\GitHub\\ORIS_2SemesterWork\\EvadminAPI\\EvadminAPI\\EvadminAPI.csproj",
         "packagesPath": "C:\\Users\\house\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\house\\Documents\\EvadminAPI\\EvadminAPI\\obj\\",
+        "outputPath": "C:\\Users\\house\\Documents\\GitHub\\ORIS_2SemesterWork\\EvadminAPI\\EvadminAPI\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -376,8 +376,8 @@
           "net8.0": {
             "targetAlias": "net8.0",
             "projectReferences": {
-              "C:\\Users\\house\\Documents\\EvadminAPI\\EvadminAPI.Services\\EvadminAPI.Services.csproj": {
-                "projectPath": "C:\\Users\\house\\Documents\\EvadminAPI\\EvadminAPI.Services\\EvadminAPI.Services.csproj"
+              "C:\\Users\\house\\Documents\\GitHub\\ORIS_2SemesterWork\\EvadminAPI\\EvadminAPI.Services\\EvadminAPI.Services.csproj": {
+                "projectPath": "C:\\Users\\house\\Documents\\GitHub\\ORIS_2SemesterWork\\EvadminAPI\\EvadminAPI.Services\\EvadminAPI.Services.csproj"
               }
             }
           }

@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "PmviC0RAHuc=",
+  "dgSpecHash": "4qni51wcz2o=",
   "success": true,
-  "projectFilePath": "C:\\Users\\house\\Documents\\EvadminAPI\\EvadminAPI.Contracts\\EvadminAPI.Contracts.csproj",
+  "projectFilePath": "C:\\Users\\house\\Documents\\GitHub\\ORIS_2SemesterWork\\EvadminAPI\\EvadminAPI.Contracts\\EvadminAPI.Contracts.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\house\\.nuget\\packages\\automapper\\12.0.1\\automapper.12.0.1.nupkg.sha512",
     "C:\\Users\\house\\.nuget\\packages\\automapper.extensions.microsoft.dependencyinjection\\12.0.1\\automapper.extensions.microsoft.dependencyinjection.12.0.1.nupkg.sha512",

@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("EvadminAPI.Infrastucture")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+82815ecba99b86f1f7a8b2ddf44994ee33dd4bf9")]
 [assembly: System.Reflection.AssemblyProductAttribute("EvadminAPI.Infrastucture")]
 [assembly: System.Reflection.AssemblyTitleAttribute("EvadminAPI.Infrastucture")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
