@@ -154,9 +154,6 @@
           "fullName": {
             "type": "string",
             "nullable": true
-          },
-          "acceptTerms": {
-            "type": "boolean"
           }
         },
         "additionalProperties": false

@@ -32,6 +32,7 @@ namespace EvadminAPI.DataBase.Repositories
 		public async Task<List<UserModel>> GetAll()
 		{
 			var result = await _context.Users
+				.Include(u => u.Role)
 				.AsNoTracking()
 				.ToListAsync();
 
@@ -41,6 +42,7 @@ namespace EvadminAPI.DataBase.Repositories
 		public async Task<UserModel> GetById(Guid id)
 		{
 			var result = await _context.Users
+				.Include(u => u.Role)
 				.AsNoTracking()
 				.FirstOrDefaultAsync(x => x.Id == id);
 
@@ -50,6 +52,7 @@ namespace EvadminAPI.DataBase.Repositories
 		public async Task<UserModel> GetByEmail(string email)
 		{
 			var result = await _context.Users
+				 .Include(u => u.Role)
 				.AsNoTracking()
 				.FirstOrDefaultAsync(x => x.Email == email);
 

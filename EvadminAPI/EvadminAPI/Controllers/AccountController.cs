@@ -19,7 +19,7 @@ namespace EvadminAPI.Controllers
 		public async Task<IActionResult> GetLogin() => View("login");
 
 		[HttpGet("register")]
-		public async Task<IActionResult> GetRegister() => View("register");
+		public async Task<IActionResult> GetRegister() => View("registration_form");
 
 		//[HttpGet("forgot-password")]
 		//public async Task<IActionResult> GetForgot() => View("forgot");

@@ -35,11 +35,23 @@
   <ItemGroup>
     <None Include="Views\Manager\management.cshtml" />
     <None Include="Views\Manager\station.cshtml" />
-    <None Include="Views\Proprietor\information.cshtml" />
+    <None Include="Views\Owner\information.cshtml" />
+    <None Include="Views\Account\registration_form.cshtml">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
   </ItemGroup>
 
   <ItemGroup>
     <ProjectReference Include="..\EvadminAPI.Services\EvadminAPI.Services.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Content Update="Views\Account\login.cshtml">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Update="Views\Account\register.cshtml">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
   </ItemGroup>
 
 </Project>

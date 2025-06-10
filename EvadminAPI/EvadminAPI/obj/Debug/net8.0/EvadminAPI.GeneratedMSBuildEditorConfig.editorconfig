@@ -28,6 +28,10 @@ build_metadata.AdditionalFiles.CssScope =
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWNjb3VudFxyZWdpc3Rlci5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
+[C:/Users/house/Documents/GitHub/ORIS_2SemesterWork/EvadminAPI/EvadminAPI/Views/Account/registration_form.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWNjb3VudFxyZWdpc3RyYXRpb25fZm9ybS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
 [C:/Users/house/Documents/GitHub/ORIS_2SemesterWork/EvadminAPI/EvadminAPI/Views/Chat/chat.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ2hhdFxjaGF0LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
@@ -44,10 +48,10 @@ build_metadata.AdditionalFiles.CssScope =
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTWFuYWdlclxzdGF0aW9uLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/house/Documents/GitHub/ORIS_2SemesterWork/EvadminAPI/EvadminAPI/Views/Pages/profile.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUGFnZXNccHJvZmlsZS5jc2h0bWw=
+[C:/Users/house/Documents/GitHub/ORIS_2SemesterWork/EvadminAPI/EvadminAPI/Views/Owner/information.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcT3duZXJcaW5mb3JtYXRpb24uY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/house/Documents/GitHub/ORIS_2SemesterWork/EvadminAPI/EvadminAPI/Views/Proprietor/information.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUHJvcHJpZXRvclxpbmZvcm1hdGlvbi5jc2h0bWw=
+[C:/Users/house/Documents/GitHub/ORIS_2SemesterWork/EvadminAPI/EvadminAPI/Views/Pages/profile.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUGFnZXNccHJvZmlsZS5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 

@@ -9,6 +9,12 @@ namespace EvadminAPI.DataBase.Configurations
 		public void Configure(EntityTypeBuilder<UserModel> builder)
 		{
 			builder.HasKey(x => x.Id);
+			builder.HasIndex(u => u.Email).IsUnique();
+
+			builder.HasOne(u => u.Role)
+			   .WithMany()
+			   .HasForeignKey(u => u.RoleId)
+			   .OnDelete(DeleteBehavior.Restrict);
 		}
 	}
 }

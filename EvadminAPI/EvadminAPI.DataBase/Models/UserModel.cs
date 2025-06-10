@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Data;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -16,6 +17,13 @@ namespace EvadminAPI.DataBase.Models
 
 		public string Password { get; set; }
 
+		public int RoleId { get; set; } = 1; 
+
+		public Role Role { get; set; } = null!;
+
+		public bool is_active { get; set; } = true;
+
+
 		public static UserModel CreateModel(UserModel model, string password)
 		{
 			return new UserModel()
@@ -24,7 +32,10 @@ namespace EvadminAPI.DataBase.Models
 				FullName = model.FullName,
 				Email = model.Email,
 				Password = password,
+				RoleId = model.RoleId,
+				is_active = model.is_active
 			};
 		}
 	}
+
 }

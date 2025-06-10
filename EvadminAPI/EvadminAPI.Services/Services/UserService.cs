@@ -30,10 +30,13 @@ namespace EvadminAPI.Services.Services
 
 			var user = _mapper.Map<UserModel>(regitster);
 
+			user.RoleId = 1; // 1 = User
+
 			var password = _passwordHasher.GenerateTokenSHA(user.Password);
 
 			await _userModelRepository.Create(user, password);
 		}
+
 
 		public async Task<string> Login(LoginContract login)
 		{

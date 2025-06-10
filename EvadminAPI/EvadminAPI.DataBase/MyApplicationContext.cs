@@ -10,6 +10,7 @@ namespace EvadminAPI.DataBase
 	{
 
 		public DbSet<UserModel> Users { get; set; }
+		public DbSet<Role> Roles { get; set; }
 
 
 		public MyApplicationContext(DbContextOptions<MyApplicationContext> dbContext) : base(dbContext) { }
@@ -17,6 +18,12 @@ namespace EvadminAPI.DataBase
 		protected override void OnModelCreating(ModelBuilder modelBuilder)
 		{
 			modelBuilder.ApplyConfiguration(new UserConfiguration());
+			modelBuilder.ApplyConfiguration(new RoleConfiguration());
+
+			modelBuilder.Entity<Role>().HasData(
+				new Role { Id = 1, Name = "User" },
+				new Role { Id = 2, Name = "Admin" }
+			);
 
 			base.OnModelCreating(modelBuilder);
 		}
