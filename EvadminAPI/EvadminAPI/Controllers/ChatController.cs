@@ -1,4 +1,5 @@
-﻿using Microsoft.AspNetCore.Mvc;
+﻿using Microsoft.AspNetCore.Authorization;
+using Microsoft.AspNetCore.Mvc;
 
 namespace EvadminAPI.Controllers
 {
@@ -6,6 +7,7 @@ namespace EvadminAPI.Controllers
 	[Route("[controller]")]
 	public class ChatController : Controller
 	{
+		[Authorize(Roles = "manager, owner")]
 		[HttpGet("Chat")]
 		public async Task<IActionResult> Chat()
 		{

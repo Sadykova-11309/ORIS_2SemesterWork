@@ -22,6 +22,82 @@ namespace EvadminAPI.DataBase.Migrations
 
             NpgsqlModelBuilderExtensions.UseIdentityByDefaultColumns(modelBuilder);
 
+            modelBuilder.Entity("EvadminAPI.DataBase.Models.ChargingSessionModel", b =>
+                {
+                    b.Property<Guid>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("uuid");
+
+                    b.Property<string>("Client_name")
+                        .IsRequired()
+                        .HasColumnType("text");
+
+                    b.Property<int>("Cost")
+                        .HasColumnType("integer");
+
+                    b.Property<string>("End_time")
+                        .IsRequired()
+                        .HasColumnType("text");
+
+                    b.Property<int>("Energy_consumed")
+                        .HasColumnType("integer");
+
+                    b.Property<string>("Start_time")
+                        .IsRequired()
+                        .HasColumnType("text");
+
+                    b.Property<Guid>("Station_id")
+                        .HasColumnType("uuid");
+
+                    b.Property<string>("Status")
+                        .IsRequired()
+                        .HasColumnType("text");
+
+                    b.HasKey("Id");
+
+                    b.HasIndex("Station_id");
+
+                    b.ToTable("Sessions");
+                });
+
+            modelBuilder.Entity("EvadminAPI.DataBase.Models.ChargingStationModel", b =>
+                {
+                    b.Property<Guid>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("uuid");
+
+                    b.Property<int>("Distance")
+                        .HasColumnType("integer");
+
+                    b.Property<string>("Name")
+                        .IsRequired()
+                        .HasColumnType("text");
+
+                    b.Property<Guid>("Owner_id")
+                        .HasColumnType("uuid");
+
+                    b.Property<int>("Price")
+                        .HasColumnType("integer");
+
+                    b.Property<string>("Slot")
+                        .IsRequired()
+                        .HasColumnType("text");
+
+                    b.Property<string>("Status")
+                        .IsRequired()
+                        .HasColumnType("text");
+
+                    b.Property<string>("Type")
+                        .IsRequired()
+                        .HasColumnType("text");
+
+                    b.HasKey("Id");
+
+                    b.HasIndex("Owner_id");
+
+                    b.ToTable("Stations");
+                });
+
             modelBuilder.Entity("EvadminAPI.DataBase.Models.Role", b =>
                 {
                     b.Property<int>("Id")
@@ -43,12 +119,12 @@ namespace EvadminAPI.DataBase.Migrations
                         new
                         {
                             Id = 1,
-                            Name = "User"
+                            Name = "owner"
                         },
                         new
                         {
                             Id = 2,
-                            Name = "Admin"
+                            Name = "manager"
                         });
                 });
 
@@ -86,6 +162,28 @@ namespace EvadminAPI.DataBase.Migrations
                     b.ToTable("Users");
                 });
 
+            modelBuilder.Entity("EvadminAPI.DataBase.Models.ChargingSessionModel", b =>
+                {
+                    b.HasOne("EvadminAPI.DataBase.Models.ChargingStationModel", "Station")
+                        .WithMany("Sessions")
+                        .HasForeignKey("Station_id")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.Navigation("Station");
+                });
+
+            modelBuilder.Entity("EvadminAPI.DataBase.Models.ChargingStationModel", b =>
+                {
+                    b.HasOne("EvadminAPI.DataBase.Models.UserModel", "User")
+                        .WithMany("Stations")
+                        .HasForeignKey("Owner_id")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.Navigation("User");
+                });
+
             modelBuilder.Entity("EvadminAPI.DataBase.Models.UserModel", b =>
                 {
                     b.HasOne("EvadminAPI.DataBase.Models.Role", "Role")
@@ -95,6 +193,16 @@ namespace EvadminAPI.DataBase.Migrations
                         .IsRequired();
 
                     b.Navigation("Role");
+                });
+
+            modelBuilder.Entity("EvadminAPI.DataBase.Models.ChargingStationModel", b =>
+                {
+                    b.Navigation("Sessions");
+                });
+
+            modelBuilder.Entity("EvadminAPI.DataBase.Models.UserModel", b =>
+                {
+                    b.Navigation("Stations");
                 });
 #pragma warning restore 612, 618
         }

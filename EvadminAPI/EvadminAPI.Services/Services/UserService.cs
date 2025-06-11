@@ -30,7 +30,7 @@ namespace EvadminAPI.Services.Services
 
 			var user = _mapper.Map<UserModel>(regitster);
 
-			user.RoleId = 1; // 1 = User
+			user.RoleId = 1;
 
 			var password = _passwordHasher.GenerateTokenSHA(user.Password);
 

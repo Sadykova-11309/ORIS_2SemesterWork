@@ -80,11 +80,6 @@
                                         </div>
                                     </div>
                                 </form>
-								<div class="text-center">
-									<p class="mt-15 mb-0 text-fade">
-                                        Don't have an account? <a href="/Account/register"> Register </a>
-									</p>
-								</div>
 							</div>						
 						</div>
 					</div>
@@ -169,7 +164,7 @@
                     });
                     
                     if (response.ok) {
-                        window.location.href = '/Home/Dashboard';
+                        window.location.href = '/Pages/Profile';
                     } else {
                         const contentType = response.headers.get('content-type');
                         let error = 'Login failed. Please try again.';

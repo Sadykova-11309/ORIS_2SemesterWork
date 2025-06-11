@@ -11,6 +11,8 @@ namespace EvadminAPI.DataBase
 
 		public DbSet<UserModel> Users { get; set; }
 		public DbSet<Role> Roles { get; set; }
+		public DbSet<ChargingStationModel> Stations	{ get; set; }
+		public DbSet<ChargingSessionModel> Sessions { get; set; }
 
 
 		public MyApplicationContext(DbContextOptions<MyApplicationContext> dbContext) : base(dbContext) { }
@@ -19,11 +21,26 @@ namespace EvadminAPI.DataBase
 		{
 			modelBuilder.ApplyConfiguration(new UserConfiguration());
 			modelBuilder.ApplyConfiguration(new RoleConfiguration());
+			modelBuilder.ApplyConfiguration(new StationConfiguration());
+			modelBuilder.ApplyConfiguration(new SessionConfiguration());
 
-			modelBuilder.Entity<Role>().HasData(
-				new Role { Id = 1, Name = "User" },
-				new Role { Id = 2, Name = "Admin" }
+			modelBuilder.Entity<Role>()
+				.HasData(
+				new Role { Id = 1, Name = "owner" },
+				new Role { Id = 2, Name = "manager" }
 			);
+
+			modelBuilder.Entity<ChargingStationModel>()
+			.HasOne(p => p.User)
+			.WithMany(t => t.Stations)
+			.HasForeignKey(p => p.Owner_id)
+			.HasPrincipalKey(t => t.Id);
+
+			modelBuilder.Entity<ChargingSessionModel>()
+			.HasOne(p => p.Station)
+			.WithMany(t => t.Sessions)
+			.HasForeignKey(p => p.Station_id)
+			.HasPrincipalKey(t => t.Id);
 
 			base.OnModelCreating(modelBuilder);
 		}

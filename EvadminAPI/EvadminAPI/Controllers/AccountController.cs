@@ -1,6 +1,11 @@
 ﻿using EvadminAPI.Contracts.Contracts;
+using EvadminAPI.DataBase.Models;
 using EvadminAPI.Services.Services;
+using Microsoft.AspNetCore.Authentication;
+using Microsoft.AspNetCore.Authentication.Cookies;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
+using System.Security.Claims;
 
 namespace EvadminAPI.Controllers
 {
@@ -18,13 +23,11 @@ namespace EvadminAPI.Controllers
 		[HttpGet("login")]
 		public async Task<IActionResult> GetLogin() => View("login");
 
+		//[Authorize(Roles = "manager")]
 		[HttpGet("register")]
 		public async Task<IActionResult> GetRegister() => View("registration_form");
 
-		//[HttpGet("forgot-password")]
-		//public async Task<IActionResult> GetForgot() => View("forgot");
-
-
+		//[Authorize(Roles = "manager")]
 		[HttpPost("register")]
 		public async Task<IActionResult> Register([FromBody] RegisterContract user)
 		{
@@ -41,26 +44,41 @@ namespace EvadminAPI.Controllers
 		[HttpPost("login")]
 		public async Task<IActionResult> Login([FromBody] LoginContract user)
 		{
-			var result = await _userService.Login(user);
-			if (result == null)
+			var userModel = await _userService.GetByEmail(user.Email);
+			if (userModel == null)
+			{
+				return Ok("Пользователь не найден");
+			}
+
+			var token = await _userService.Login(user);
+			if (token == null)
 			{
 				return Ok("Неверный пароль или вы не зарегистрированы");
 			}
 
-			Response.Cookies.Append("ass-token", result);
+			await Authenticate(userModel);
 
-			return Ok(new { result });
+			return Ok(new { message = "Успешный вход" });
+
 		}
 
-		//[HttpPost("forgot")]
-		//public async Task<IActionResult> ForgotPassword([FromBody] UserModel user)
-		//{
-		//	var token = await _userService.GetByEmail(user.Email);
-		//	if (token == null)
-		//	{
-		//		return Ok("Вы не зарегистрированы");
-		//	}
-		//	return Ok($"Ваш пароль {token.Password}");
-		//}
+		private async Task Authenticate(UserModel user)
+		{
+			var claims = new List<Claim>
+			{
+				new Claim(ClaimsIdentity.DefaultNameClaimType, user.Email)
+			};
+
+			// Добавляем роль, если она есть и не пустая
+			if (!string.IsNullOrEmpty(user.Role?.Name))
+			{
+				claims.Add(new Claim(ClaimsIdentity.DefaultRoleClaimType, user.Role.Name));
+			}
+
+			var identity = new ClaimsIdentity(claims, CookieAuthenticationDefaults.AuthenticationScheme);
+			var principal = new ClaimsPrincipal(identity);
+
+			await HttpContext.SignInAsync(CookieAuthenticationDefaults.AuthenticationScheme, principal);
+		}
 	}
 }

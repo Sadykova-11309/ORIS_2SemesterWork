@@ -1,7 +1,20 @@
 {
   "Version": 1,
   "WorkspaceRootPath": "C:\\Users\\house\\Documents\\GitHub\\ORIS_2SemesterWork\\EvadminAPI\\",
-  "Documents": [],
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{22C67276-31DE-43A6-838B-30FA20047A76}|EvadminAPI\\EvadminAPI.csproj|c:\\users\\house\\documents\\github\\oris_2semesterwork\\evadminapi\\evadminapi\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{22C67276-31DE-43A6-838B-30FA20047A76}|EvadminAPI\\EvadminAPI.csproj|solutionrelative:evadminapi\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{22C67276-31DE-43A6-838B-30FA20047A76}|EvadminAPI\\EvadminAPI.csproj|c:\\users\\house\\documents\\github\\oris_2semesterwork\\evadminapi\\evadminapi\\controllers\\accountcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{22C67276-31DE-43A6-838B-30FA20047A76}|EvadminAPI\\EvadminAPI.csproj|solutionrelative:evadminapi\\controllers\\accountcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{94BD28F8-BC51-4E32-A43A-F7F247A3B1CE}|EvadminAPI.DataBase\\EvadminAPI.DataBase.csproj|c:\\users\\house\\documents\\github\\oris_2semesterwork\\evadminapi\\evadminapi.database\\myapplicationcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{94BD28F8-BC51-4E32-A43A-F7F247A3B1CE}|EvadminAPI.DataBase\\EvadminAPI.DataBase.csproj|solutionrelative:evadminapi.database\\myapplicationcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
   "DocumentGroupContainers": [
     {
       "Orientation": 0,
@@ -9,7 +22,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": -1,
+          "SelectedChildIndex": 4,
           "Children": [
             {
               "$type": "Bookmark",
@@ -26,6 +39,45 @@
             {
               "$type": "Bookmark",
               "Name": "ST:0:0:{0ad07096-bba9-4900-a651-0598d26f6d24}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\house\\Documents\\GitHub\\ORIS_2SemesterWork\\EvadminAPI\\EvadminAPI\\Program.cs",
+              "RelativeDocumentMoniker": "EvadminAPI\\Program.cs",
+              "ToolTip": "C:\\Users\\house\\Documents\\GitHub\\ORIS_2SemesterWork\\EvadminAPI\\EvadminAPI\\Program.cs",
+              "RelativeToolTip": "EvadminAPI\\Program.cs",
+              "ViewState": "AgIAAEYAAAAAAAAAAAAQwHkAAAAGAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-11T18:33:26.042Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "AccountController.cs",
+              "DocumentMoniker": "C:\\Users\\house\\Documents\\GitHub\\ORIS_2SemesterWork\\EvadminAPI\\EvadminAPI\\Controllers\\AccountController.cs",
+              "RelativeDocumentMoniker": "EvadminAPI\\Controllers\\AccountController.cs",
+              "ToolTip": "C:\\Users\\house\\Documents\\GitHub\\ORIS_2SemesterWork\\EvadminAPI\\EvadminAPI\\Controllers\\AccountController.cs",
+              "RelativeToolTip": "EvadminAPI\\Controllers\\AccountController.cs",
+              "ViewState": "AgIAADMAAAAAAAAAAAAAAD0AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-11T18:24:19.452Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "MyApplicationContext.cs",
+              "DocumentMoniker": "C:\\Users\\house\\Documents\\GitHub\\ORIS_2SemesterWork\\EvadminAPI\\EvadminAPI.DataBase\\MyApplicationContext.cs",
+              "RelativeDocumentMoniker": "EvadminAPI.DataBase\\MyApplicationContext.cs",
+              "ToolTip": "C:\\Users\\house\\Documents\\GitHub\\ORIS_2SemesterWork\\EvadminAPI\\EvadminAPI.DataBase\\MyApplicationContext.cs",
+              "RelativeToolTip": "EvadminAPI.DataBase\\MyApplicationContext.cs",
+              "ViewState": "AgIAAAcAAAAAAAAAAAAIwCQAAAAfAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-11T18:12:46.98Z",
+              "EditorCaption": ""
             }
           ]
         }

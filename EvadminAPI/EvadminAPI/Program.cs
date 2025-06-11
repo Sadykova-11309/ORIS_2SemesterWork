@@ -7,15 +7,16 @@ using EvadminAPI.DataBase.Repositories.Interfaces;
 using EvadminAPI.Infrastucture;
 using EvadminAPI.Services.Mapping;
 using EvadminAPI.Services.Services;
+using Microsoft.AspNetCore.Authentication.Cookies;
 using Microsoft.EntityFrameworkCore;
 using System.Text.Json.Serialization;
 
 namespace EvadminAPI
 {
-    public class Program
-    {
-        public static void Main(string[] args)
-        {
+	public class Program
+	{
+		public static void Main(string[] args)
+		{
 			var builder = WebApplication.CreateBuilder(args);
 
 			builder.Services.AddControllers();
@@ -38,13 +39,67 @@ namespace EvadminAPI
 			builder.Services.AddScoped<IUserModelRepository, UserModelRepository>();
 
 			builder.Services.AddAutoMapper(typeof(AutoMappingProducts));
+
 			builder.Services.AddAuthOption(builder.Configuration);
 
 			builder.Services.AddControllers()
-					.AddJsonOptions(options =>
+				.AddJsonOptions(options =>
+				{
+					options.JsonSerializerOptions.Converters.Add(new JsonStringEnumConverter());
+				});
+
+			// Обновленная конфигурация аутентификации
+			builder.Services.AddAuthentication(options =>
+			{
+				options.DefaultScheme = CookieAuthenticationDefaults.AuthenticationScheme;
+				options.DefaultAuthenticateScheme = CookieAuthenticationDefaults.AuthenticationScheme;
+				options.DefaultChallengeScheme = CookieAuthenticationDefaults.AuthenticationScheme;
+				options.DefaultSignInScheme = CookieAuthenticationDefaults.AuthenticationScheme;
+			})
+			.AddCookie(CookieAuthenticationDefaults.AuthenticationScheme, options =>
+			{
+				options.LoginPath = "/Account/login";
+				options.AccessDeniedPath = "/Account/accessdenied";
+				options.Cookie.Name = "auth_cookie";
+				options.ExpireTimeSpan = TimeSpan.FromHours(1);
+				options.SlidingExpiration = true;
+
+				// Критически важные настройки для разработки
+				options.Cookie.SecurePolicy = CookieSecurePolicy.None; // Разрешить HTTP
+				options.Cookie.SameSite = SameSiteMode.Lax;           // Разрешить cross-site
+				options.Cookie.HttpOnly = true;                       // Защита от XSS
+
+				// Дополнительные настройки для отладки
+				options.Events = new CookieAuthenticationEvents
+				{
+					OnRedirectToLogin = context =>
 					{
-						options.JsonSerializerOptions.Converters.Add(new JsonStringEnumConverter());
-					});
+						context.Response.StatusCode = 401;
+						return Task.CompletedTask;
+					},
+					OnRedirectToAccessDenied = context =>
+					{
+						context.Response.StatusCode = 403;
+						return Task.CompletedTask;
+					}
+				};
+			});
+
+			//// Добавляем аутентификацию через куки
+			//builder.Services.AddAuthentication(options =>
+			//{
+			//	// Устанавливаем схему аутентификации по умолчанию на куки
+			//	options.DefaultAuthenticateScheme = CookieAuthenticationDefaults.AuthenticationScheme;
+			//	options.DefaultChallengeScheme = CookieAuthenticationDefaults.AuthenticationScheme;
+			//})
+			//.AddCookie(CookieAuthenticationDefaults.AuthenticationScheme, options =>
+			//{
+			//	options.LoginPath = "/Account/login"; // путь для редиректа при неавторизованном доступе
+			//	options.AccessDeniedPath = "/Account/accessdenied"; // путь при отказе в доступе
+			//	options.Cookie.Name = "auth_cookie"; // имя куки (можно изменить)
+			//	options.ExpireTimeSpan = TimeSpan.FromHours(1); // время жизни куки
+			//	options.SlidingExpiration = true; // обновлять время жизни куки при активности
+			//});
 
 			var app = builder.Build();
 
@@ -56,13 +111,22 @@ namespace EvadminAPI
 			app.UseSwaggerUI();
 
 			app.UseHttpsRedirection();
+
+			app.UseStaticFiles();
+
+			app.UseRouting();
+
+			app.UseCookiePolicy(new CookiePolicyOptions
+			{
+				MinimumSameSitePolicy = SameSiteMode.Lax
+			});
+
 			app.UseAuthentication();
 			app.UseAuthorization();
-			app.UseStaticFiles();
 
 			app.MapControllers();
 
 			app.Run();
 		}
-    }
+	}
 }

@@ -17,11 +17,13 @@ namespace EvadminAPI.DataBase.Models
 
 		public string Password { get; set; }
 
-		public int RoleId { get; set; } = 1; 
+		public int RoleId { get; set; } 
 
 		public Role Role { get; set; } = null!;
 
 		public bool is_active { get; set; } = true;
+
+		public List<ChargingStationModel>? Stations { get; set; }
 
 
 		public static UserModel CreateModel(UserModel model, string password)
@@ -33,7 +35,8 @@ namespace EvadminAPI.DataBase.Models
 				Email = model.Email,
 				Password = password,
 				RoleId = model.RoleId,
-				is_active = model.is_active
+				is_active = model.is_active,
+				Stations = model.Stations
 			};
 		}
 	}
