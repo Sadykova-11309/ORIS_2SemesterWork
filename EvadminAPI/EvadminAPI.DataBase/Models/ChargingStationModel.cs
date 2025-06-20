@@ -1,9 +1,5 @@
-﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel.DataAnnotations.Schema;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿using System.ComponentModel.DataAnnotations.Schema;
+
 
 namespace EvadminAPI.DataBase.Models
 {
@@ -15,12 +11,14 @@ namespace EvadminAPI.DataBase.Models
 		public string Type { get; set; }
 		public int Price { get; set; }
 		public string Slot { get; set; }
-		public string Status { get; set; }
+		public string Status { get; set; } = "Active";
 		public List<ChargingSessionModel> Sessions { get; set; }
-		public Guid Owner_id { get; set; }
 
-		[ForeignKey("Owner_id")]
+		[ForeignKey("User")]
+		public Guid Owner_id { get; set; } 
 		public UserModel User { get; set; }
+		public double Latitude { get; set; }
+		public double Longitude { get; set; }
 
 		public static ChargingStationModel CreateModel(ChargingStationModel model)
 		{
@@ -35,11 +33,13 @@ namespace EvadminAPI.DataBase.Models
 				Status = model.Status,
 				Sessions = model.Sessions,
 				Owner_id = model.Owner_id,
-				User = model.User
+				User = model.User,
+				Latitude = model.Latitude,
+				Longitude = model.Longitude,
+				
 			};
 		}
 	}
 }
 
 
-//`status` (`available` | `unavailable` | `in_use`),

@@ -9,7 +9,7 @@ using System.Threading.Tasks;
 
 namespace EvadminAPI.DataBase.Configurations
 {
-	internal class StationConfiguration : IEntityTypeConfiguration<ChargingStationModel>
+	public class StationConfiguration : IEntityTypeConfiguration<ChargingStationModel>
 	{
 		public void Configure(EntityTypeBuilder<ChargingStationModel> builder)
 		{

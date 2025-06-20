@@ -1,0 +1,110 @@
+@{
+	Layout = "_Layout"; // Указывает на общий Layout
+	ViewData["Title"] = "Session Form";
+}
+<div class="content-wrapper">
+    <div class="container-full">
+        <div class="content-header">
+            <div class="d-flex align-items-center">
+                <div class="me-auto">
+                    <h4 class="page-title">Session Form</h4>
+                </div>
+            </div>
+        </div>
+
+        <section class="content">
+            <div class="row">
+                <div class="col-12">
+                    <div class="card">
+                        <div class="card-body">
+                            <h4 class="header-title">New Session</h4>
+
+                            <div id="alertBox" class="alert d-none"></div>
+
+                            <form id="sessionForm" asp-antiforgery="true">
+@Html.AntiForgeryToken()
+                                <div class="row g-4">
+                                    <!-- LEFT COLUMN -->
+                                    <div class="col-lg-6">
+                                        <div class="mb-3">
+                                            <label for="number" class="form-label">Session Number</label>
+                                            <input type="text" id="number" class="form-control" required />
+                                        </div>
+                                        <div class="mb-3">
+                                            <label for="stationSelect" class="form-label">Station</label>
+                                            <select id="stationSelect" class="form-select" required>
+                                                <option value="" disabled selected hidden>Loading…</option>
+                                            </select>
+                                        </div>
+                                        <div class="mb-3">
+                                            <label for="startDate" class="form-label">Date</label>
+                                            <input type="date" id="startDate" class="form-control" required />
+                                        </div>
+                                        <div class="mb-3">
+                                            <label for="clientName" class="form-label">Client Name</label>
+                                            <input type="text" id="clientName" class="form-control" required />
+                                        </div>
+                                        <div class="mb-3">
+                                            <label for="location" class="form-label">Location</label>
+                                            <select id="location" class="form-select" required>
+                                                <option value="" disabled selected hidden>Select location</option>
+                                                <option>New York</option>
+                                                <option>Los Angeles</option>
+                                                <option>Chicago</option>
+                                                <option>Houston</option>
+                                                <option>San Diego</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                    <!-- RIGHT COLUMN -->
+                                    <div class="col-lg-6">
+                                        <div class="mb-3">
+                                            <label for="info" class="form-label">Charger Type №</label>
+                                            <select id="info" class="form-select" required>
+                                                <option value="" disabled selected hidden>Select type</option>
+                                                <option>1</option>
+                                                <option>2</option>
+                                                <option>3</option>
+                                                <option>4</option>
+                                                <option>5</option>
+                                            </select>
+                                        </div>
+                                        <div class="mb-3">
+                                            <label for="energy" class="form-label">Energy Consumed (kWh)</label>
+                                            <input type="number" id="energy" class="form-control" min="0" required />
+                                        </div>
+                                        <div class="mb-3">
+                                            <label for="cost" class="form-label">Total Cost ($)</label>
+                                            <input type="number" id="cost" class="form-control" min="0" required />
+                                        </div>
+                                        <div class="mb-3">
+                                            <label for="status" class="form-label">Status</label>
+                                            <select id="status" class="form-select" required>
+                                                <option value="" disabled selected hidden>Select status</option>
+                                                <option value="active">active</option>
+                                                <option value="complete">completed</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="text-end">
+                                    <button type="submit" id="submitBtn" class="btn btn-primary">ADD SESSION</button>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+</div>
+
+
+@section Scripts {
+    <script src="~/js/session_create.js" defer></script>
+}
+                                                
+
+                           
+

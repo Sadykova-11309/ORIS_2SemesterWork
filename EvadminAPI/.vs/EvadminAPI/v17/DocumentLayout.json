@@ -3,16 +3,48 @@
   "WorkspaceRootPath": "C:\\Users\\house\\Documents\\GitHub\\ORIS_2SemesterWork\\EvadminAPI\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{22C67276-31DE-43A6-838B-30FA20047A76}|EvadminAPI\\EvadminAPI.csproj|c:\\users\\house\\documents\\github\\oris_2semesterwork\\evadminapi\\evadminapi\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{22C67276-31DE-43A6-838B-30FA20047A76}|EvadminAPI\\EvadminAPI.csproj|solutionrelative:evadminapi\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{22C67276-31DE-43A6-838B-30FA20047A76}|EvadminAPI\\EvadminAPI.csproj|c:\\users\\house\\documents\\github\\oris_2semesterwork\\evadminapi\\evadminapi\\wwwroot\\js\\station.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}",
+      "RelativeMoniker": "D:0:0:{22C67276-31DE-43A6-838B-30FA20047A76}|EvadminAPI\\EvadminAPI.csproj|solutionrelative:evadminapi\\wwwroot\\js\\station.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{22C67276-31DE-43A6-838B-30FA20047A76}|EvadminAPI\\EvadminAPI.csproj|c:\\users\\house\\documents\\github\\oris_2semesterwork\\evadminapi\\evadminapi\\wwwroot\\js\\station_create.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}",
+      "RelativeMoniker": "D:0:0:{22C67276-31DE-43A6-838B-30FA20047A76}|EvadminAPI\\EvadminAPI.csproj|solutionrelative:evadminapi\\wwwroot\\js\\station_create.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{22C67276-31DE-43A6-838B-30FA20047A76}|EvadminAPI\\EvadminAPI.csproj|c:\\users\\house\\documents\\github\\oris_2semesterwork\\evadminapi\\evadminapi\\controllers\\ownercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{22C67276-31DE-43A6-838B-30FA20047A76}|EvadminAPI\\EvadminAPI.csproj|solutionrelative:evadminapi\\controllers\\ownercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{22C67276-31DE-43A6-838B-30FA20047A76}|EvadminAPI\\EvadminAPI.csproj|c:\\users\\house\\documents\\github\\oris_2semesterwork\\evadminapi\\evadminapi\\controllers\\sessioncontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{22C67276-31DE-43A6-838B-30FA20047A76}|EvadminAPI\\EvadminAPI.csproj|solutionrelative:evadminapi\\controllers\\sessioncontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{22C67276-31DE-43A6-838B-30FA20047A76}|EvadminAPI\\EvadminAPI.csproj|c:\\users\\house\\documents\\github\\oris_2semesterwork\\evadminapi\\evadminapi\\controllers\\pagescontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{22C67276-31DE-43A6-838B-30FA20047A76}|EvadminAPI\\EvadminAPI.csproj|solutionrelative:evadminapi\\controllers\\pagescontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{22C67276-31DE-43A6-838B-30FA20047A76}|EvadminAPI\\EvadminAPI.csproj|c:\\users\\house\\documents\\github\\oris_2semesterwork\\evadminapi\\evadminapi\\controllers\\managercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{22C67276-31DE-43A6-838B-30FA20047A76}|EvadminAPI\\EvadminAPI.csproj|solutionrelative:evadminapi\\controllers\\managercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{22C67276-31DE-43A6-838B-30FA20047A76}|EvadminAPI\\EvadminAPI.csproj|c:\\users\\house\\documents\\github\\oris_2semesterwork\\evadminapi\\evadminapi\\controllers\\emailsendercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{22C67276-31DE-43A6-838B-30FA20047A76}|EvadminAPI\\EvadminAPI.csproj|solutionrelative:evadminapi\\controllers\\emailsendercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{22C67276-31DE-43A6-838B-30FA20047A76}|EvadminAPI\\EvadminAPI.csproj|c:\\users\\house\\documents\\github\\oris_2semesterwork\\evadminapi\\evadminapi\\controllers\\accountcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{22C67276-31DE-43A6-838B-30FA20047A76}|EvadminAPI\\EvadminAPI.csproj|solutionrelative:evadminapi\\controllers\\accountcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{94BD28F8-BC51-4E32-A43A-F7F247A3B1CE}|EvadminAPI.DataBase\\EvadminAPI.DataBase.csproj|c:\\users\\house\\documents\\github\\oris_2semesterwork\\evadminapi\\evadminapi.database\\myapplicationcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{94BD28F8-BC51-4E32-A43A-F7F247A3B1CE}|EvadminAPI.DataBase\\EvadminAPI.DataBase.csproj|solutionrelative:evadminapi.database\\myapplicationcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{22C67276-31DE-43A6-838B-30FA20047A76}|EvadminAPI\\EvadminAPI.csproj|c:\\users\\house\\documents\\github\\oris_2semesterwork\\evadminapi\\evadminapi\\middlewares\\errorhandlingmiddlware.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{22C67276-31DE-43A6-838B-30FA20047A76}|EvadminAPI\\EvadminAPI.csproj|solutionrelative:evadminapi\\middlewares\\errorhandlingmiddlware.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{22C67276-31DE-43A6-838B-30FA20047A76}|EvadminAPI\\EvadminAPI.csproj|c:\\users\\house\\documents\\github\\oris_2semesterwork\\evadminapi\\evadminapi\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{22C67276-31DE-43A6-838B-30FA20047A76}|EvadminAPI\\EvadminAPI.csproj|solutionrelative:evadminapi\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{22C67276-31DE-43A6-838B-30FA20047A76}|EvadminAPI\\EvadminAPI.csproj|c:\\users\\house\\documents\\github\\oris_2semesterwork\\evadminapi\\evadminapi\\wwwroot\\js\\registerowner.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}",
+      "RelativeMoniker": "D:0:0:{22C67276-31DE-43A6-838B-30FA20047A76}|EvadminAPI\\EvadminAPI.csproj|solutionrelative:evadminapi\\wwwroot\\js\\registerowner.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}"
     }
   ],
   "DocumentGroupContainers": [
@@ -43,40 +75,144 @@
             {
               "$type": "Document",
               "DocumentIndex": 0,
-              "Title": "Program.cs",
-              "DocumentMoniker": "C:\\Users\\house\\Documents\\GitHub\\ORIS_2SemesterWork\\EvadminAPI\\EvadminAPI\\Program.cs",
-              "RelativeDocumentMoniker": "EvadminAPI\\Program.cs",
-              "ToolTip": "C:\\Users\\house\\Documents\\GitHub\\ORIS_2SemesterWork\\EvadminAPI\\EvadminAPI\\Program.cs",
-              "RelativeToolTip": "EvadminAPI\\Program.cs",
-              "ViewState": "AgIAAEYAAAAAAAAAAAAQwHkAAAAGAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-11T18:33:26.042Z",
+              "Title": "station.js",
+              "DocumentMoniker": "C:\\Users\\house\\Documents\\GitHub\\ORIS_2SemesterWork\\EvadminAPI\\EvadminAPI\\wwwroot\\js\\station.js",
+              "RelativeDocumentMoniker": "EvadminAPI\\wwwroot\\js\\station.js",
+              "ToolTip": "C:\\Users\\house\\Documents\\GitHub\\ORIS_2SemesterWork\\EvadminAPI\\EvadminAPI\\wwwroot\\js\\station.js",
+              "RelativeToolTip": "EvadminAPI\\wwwroot\\js\\station.js",
+              "ViewState": "AgIAAC0AAAAAAAAAAAAAADsAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001646|",
+              "WhenOpened": "2025-06-20T06:34:27.491Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 1,
-              "Title": "AccountController.cs",
-              "DocumentMoniker": "C:\\Users\\house\\Documents\\GitHub\\ORIS_2SemesterWork\\EvadminAPI\\EvadminAPI\\Controllers\\AccountController.cs",
-              "RelativeDocumentMoniker": "EvadminAPI\\Controllers\\AccountController.cs",
-              "ToolTip": "C:\\Users\\house\\Documents\\GitHub\\ORIS_2SemesterWork\\EvadminAPI\\EvadminAPI\\Controllers\\AccountController.cs",
-              "RelativeToolTip": "EvadminAPI\\Controllers\\AccountController.cs",
-              "ViewState": "AgIAADMAAAAAAAAAAAAAAD0AAAAAAAAAAAAAAA==",
+              "Title": "station_create.js",
+              "DocumentMoniker": "C:\\Users\\house\\Documents\\GitHub\\ORIS_2SemesterWork\\EvadminAPI\\EvadminAPI\\wwwroot\\js\\station_create.js",
+              "RelativeDocumentMoniker": "EvadminAPI\\wwwroot\\js\\station_create.js",
+              "ToolTip": "C:\\Users\\house\\Documents\\GitHub\\ORIS_2SemesterWork\\EvadminAPI\\EvadminAPI\\wwwroot\\js\\station_create.js",
+              "RelativeToolTip": "EvadminAPI\\wwwroot\\js\\station_create.js",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001646|",
+              "WhenOpened": "2025-06-20T06:34:23.415Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "SessionController.cs",
+              "DocumentMoniker": "C:\\Users\\house\\Documents\\GitHub\\ORIS_2SemesterWork\\EvadminAPI\\EvadminAPI\\Controllers\\SessionController.cs",
+              "RelativeDocumentMoniker": "EvadminAPI\\Controllers\\SessionController.cs",
+              "ToolTip": "C:\\Users\\house\\Documents\\GitHub\\ORIS_2SemesterWork\\EvadminAPI\\EvadminAPI\\Controllers\\SessionController.cs",
+              "RelativeToolTip": "EvadminAPI\\Controllers\\SessionController.cs",
+              "ViewState": "AgIAACAAAAAAAAAAAAAgwAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-11T18:24:19.452Z",
+              "WhenOpened": "2025-06-20T06:13:06.477Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "PagesController.cs",
+              "DocumentMoniker": "C:\\Users\\house\\Documents\\GitHub\\ORIS_2SemesterWork\\EvadminAPI\\EvadminAPI\\Controllers\\PagesController.cs",
+              "RelativeDocumentMoniker": "EvadminAPI\\Controllers\\PagesController.cs",
+              "ToolTip": "C:\\Users\\house\\Documents\\GitHub\\ORIS_2SemesterWork\\EvadminAPI\\EvadminAPI\\Controllers\\PagesController.cs",
+              "RelativeToolTip": "EvadminAPI\\Controllers\\PagesController.cs",
+              "ViewState": "AgIAAAkAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-20T06:13:01.181Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 2,
-              "Title": "MyApplicationContext.cs",
-              "DocumentMoniker": "C:\\Users\\house\\Documents\\GitHub\\ORIS_2SemesterWork\\EvadminAPI\\EvadminAPI.DataBase\\MyApplicationContext.cs",
-              "RelativeDocumentMoniker": "EvadminAPI.DataBase\\MyApplicationContext.cs",
-              "ToolTip": "C:\\Users\\house\\Documents\\GitHub\\ORIS_2SemesterWork\\EvadminAPI\\EvadminAPI.DataBase\\MyApplicationContext.cs",
-              "RelativeToolTip": "EvadminAPI.DataBase\\MyApplicationContext.cs",
-              "ViewState": "AgIAAAcAAAAAAAAAAAAIwCQAAAAfAAAAAAAAAA==",
+              "Title": "OwnerController.cs",
+              "DocumentMoniker": "C:\\Users\\house\\Documents\\GitHub\\ORIS_2SemesterWork\\EvadminAPI\\EvadminAPI\\Controllers\\OwnerController.cs",
+              "RelativeDocumentMoniker": "EvadminAPI\\Controllers\\OwnerController.cs",
+              "ToolTip": "C:\\Users\\house\\Documents\\GitHub\\ORIS_2SemesterWork\\EvadminAPI\\EvadminAPI\\Controllers\\OwnerController.cs",
+              "RelativeToolTip": "EvadminAPI\\Controllers\\OwnerController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABkAAAAjAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-11T18:12:46.98Z",
+              "WhenOpened": "2025-06-20T06:12:55.809Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "ManagerController.cs",
+              "DocumentMoniker": "C:\\Users\\house\\Documents\\GitHub\\ORIS_2SemesterWork\\EvadminAPI\\EvadminAPI\\Controllers\\ManagerController.cs",
+              "RelativeDocumentMoniker": "EvadminAPI\\Controllers\\ManagerController.cs",
+              "ToolTip": "C:\\Users\\house\\Documents\\GitHub\\ORIS_2SemesterWork\\EvadminAPI\\EvadminAPI\\Controllers\\ManagerController.cs",
+              "RelativeToolTip": "EvadminAPI\\Controllers\\ManagerController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-20T06:12:47.232Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "EmailSenderController.cs",
+              "DocumentMoniker": "C:\\Users\\house\\Documents\\GitHub\\ORIS_2SemesterWork\\EvadminAPI\\EvadminAPI\\Controllers\\EmailSenderController.cs",
+              "RelativeDocumentMoniker": "EvadminAPI\\Controllers\\EmailSenderController.cs",
+              "ToolTip": "C:\\Users\\house\\Documents\\GitHub\\ORIS_2SemesterWork\\EvadminAPI\\EvadminAPI\\Controllers\\EmailSenderController.cs",
+              "RelativeToolTip": "EvadminAPI\\Controllers\\EmailSenderController.cs",
+              "ViewState": "AgIAAAYAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-20T06:12:40.354Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "AccountController.cs",
+              "DocumentMoniker": "C:\\Users\\house\\Documents\\GitHub\\ORIS_2SemesterWork\\EvadminAPI\\EvadminAPI\\Controllers\\AccountController.cs",
+              "RelativeDocumentMoniker": "EvadminAPI\\Controllers\\AccountController.cs",
+              "ToolTip": "C:\\Users\\house\\Documents\\GitHub\\ORIS_2SemesterWork\\EvadminAPI\\EvadminAPI\\Controllers\\AccountController.cs",
+              "RelativeToolTip": "EvadminAPI\\Controllers\\AccountController.cs",
+              "ViewState": "AgIAAAYAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-20T06:12:33.141Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "ErrorHandlingMiddlware.cs",
+              "DocumentMoniker": "C:\\Users\\house\\Documents\\GitHub\\ORIS_2SemesterWork\\EvadminAPI\\EvadminAPI\\Middlewares\\ErrorHandlingMiddlware.cs",
+              "RelativeDocumentMoniker": "EvadminAPI\\Middlewares\\ErrorHandlingMiddlware.cs",
+              "ToolTip": "C:\\Users\\house\\Documents\\GitHub\\ORIS_2SemesterWork\\EvadminAPI\\EvadminAPI\\Middlewares\\ErrorHandlingMiddlware.cs",
+              "RelativeToolTip": "EvadminAPI\\Middlewares\\ErrorHandlingMiddlware.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-20T06:12:27.019Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "_Layout.cshtml",
+              "DocumentMoniker": "C:\\Users\\house\\Documents\\GitHub\\ORIS_2SemesterWork\\EvadminAPI\\EvadminAPI\\Views\\Shared\\_Layout.cshtml",
+              "RelativeDocumentMoniker": "EvadminAPI\\Views\\Shared\\_Layout.cshtml",
+              "ToolTip": "C:\\Users\\house\\Documents\\GitHub\\ORIS_2SemesterWork\\EvadminAPI\\EvadminAPI\\Views\\Shared\\_Layout.cshtml",
+              "RelativeToolTip": "EvadminAPI\\Views\\Shared\\_Layout.cshtml",
+              "ViewState": "AgIAACQAAAAAAAAAAAAAADUAAAAGAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-06-20T06:09:10.23Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "registerOwner.js",
+              "DocumentMoniker": "C:\\Users\\house\\Documents\\GitHub\\ORIS_2SemesterWork\\EvadminAPI\\EvadminAPI\\wwwroot\\js\\registerOwner.js",
+              "RelativeDocumentMoniker": "EvadminAPI\\wwwroot\\js\\registerOwner.js",
+              "ToolTip": "C:\\Users\\house\\Documents\\GitHub\\ORIS_2SemesterWork\\EvadminAPI\\EvadminAPI\\wwwroot\\js\\registerOwner.js",
+              "RelativeToolTip": "EvadminAPI\\wwwroot\\js\\registerOwner.js",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAG4AAAAzAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001646|",
+              "WhenOpened": "2025-06-19T20:59:40.794Z",
               "EditorCaption": ""
             }
           ]

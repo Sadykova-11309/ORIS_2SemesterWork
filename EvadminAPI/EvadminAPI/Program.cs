@@ -1,10 +1,15 @@
 using EvadminAPI.AuthCheck;
+using EvadminAPI.Contracts.Abstractions;
 using EvadminAPI.DataBase;
 using EvadminAPI.DataBase.Configurations;
 using EvadminAPI.DataBase.Models;
 using EvadminAPI.DataBase.Repositories;
 using EvadminAPI.DataBase.Repositories.Interfaces;
+using EvadminAPI.DataBase.Repository;
+using EvadminAPI.DataBase.Repository.Extensions;
 using EvadminAPI.Infrastucture;
+using EvadminAPI.Infrastucture.Template;
+using EvadminAPI.Middlewares;
 using EvadminAPI.Services.Mapping;
 using EvadminAPI.Services.Services;
 using Microsoft.AspNetCore.Authentication.Cookies;
@@ -19,7 +24,15 @@ namespace EvadminAPI
 		{
 			var builder = WebApplication.CreateBuilder(args);
 
-			builder.Services.AddControllers();
+			builder.Services.AddHttpContextAccessor();
+			builder.Services.AddControllers()
+				.AddJsonOptions(o =>
+				{
+					o.JsonSerializerOptions.ReferenceHandler =
+					System.Text.Json.Serialization.ReferenceHandler.IgnoreCycles;
+					o.JsonSerializerOptions.DefaultIgnoreCondition =
+					System.Text.Json.Serialization.JsonIgnoreCondition.WhenWritingNull;
+				});
 			builder.Services.AddEndpointsApiExplorer();
 			builder.Services.AddSwaggerGen();
 			builder.Services.AddControllersWithViews();
@@ -30,13 +43,29 @@ namespace EvadminAPI
 				options.UseNpgsql(builder.Configuration.GetConnectionString("MyDbContext")));
 
 			builder.Services.AddScoped<UserService>();
+			builder.Services.AddScoped<AuthenticationService>();
+			builder.Services.AddScoped<IStationService, StationService>();
+			builder.Services.AddScoped<ISessionService, SessionService>();
+			builder.Services.AddScoped<IManagerService, ManagerService>();
+			builder.Services.AddScoped<IOwnerService, OwnerService>();
+			builder.Services.AddScoped<EmailService>();
 			builder.Services.AddScoped<JwtOption>();
 			builder.Services.AddScoped<JwtProvider>();
 			builder.Services.AddScoped<PasswordHasher>();
 			builder.Services.AddScoped<MyApplicationContext>();
 			builder.Services.AddScoped<UserConfiguration>();
+			builder.Services.AddScoped<StationConfiguration>();
+			builder.Services.AddScoped<SessionConfiguration>();
 			builder.Services.AddScoped<UserModel>();
+			builder.Services.AddScoped<ChargingStationModel>();
+			builder.Services.AddScoped<ChargingSessionModel>();
+			builder.Services.AddScoped<IChargingStationModelRepository, ChargingStationModelRepository>();
+			builder.Services.AddScoped<IChargingSessionModelRepository, ChargingSessionModelRepository>();
 			builder.Services.AddScoped<IUserModelRepository, UserModelRepository>();
+			builder.Services.AddScoped<EmailRepository>();
+
+			builder.Services.AddScoped<ITemplateEngine, ScribanTemplateEngine>();
+
 
 			builder.Services.AddAutoMapper(typeof(AutoMappingProducts));
 
@@ -48,7 +77,7 @@ namespace EvadminAPI
 					options.JsonSerializerOptions.Converters.Add(new JsonStringEnumConverter());
 				});
 
-			// Обновленная конфигурация аутентификации
+			// пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ
 			builder.Services.AddAuthentication(options =>
 			{
 				options.DefaultScheme = CookieAuthenticationDefaults.AuthenticationScheme;
@@ -64,44 +93,37 @@ namespace EvadminAPI
 				options.ExpireTimeSpan = TimeSpan.FromHours(1);
 				options.SlidingExpiration = true;
 
-				// Критически важные настройки для разработки
-				options.Cookie.SecurePolicy = CookieSecurePolicy.None; // Разрешить HTTP
-				options.Cookie.SameSite = SameSiteMode.Lax;           // Разрешить cross-site
-				options.Cookie.HttpOnly = true;                       // Защита от XSS
+				// пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ
+				options.Cookie.SecurePolicy = CookieSecurePolicy.None; // пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ HTTP
+				options.Cookie.SameSite = SameSiteMode.Lax;           // пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ cross-site
+				options.Cookie.HttpOnly = true;                       // пїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅ XSS
 
-				// Дополнительные настройки для отладки
+				// пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅ
 				options.Events = new CookieAuthenticationEvents
 				{
 					OnRedirectToLogin = context =>
 					{
-						context.Response.StatusCode = 401;
-						return Task.CompletedTask;
-					},
-					OnRedirectToAccessDenied = context =>
-					{
-						context.Response.StatusCode = 403;
+						if (context.Request.Path.StartsWithSegments("/api") || context.Request.Path.StartsWithSegments("/swagger"))
+						{
+							context.Response.StatusCode = StatusCodes.Status401Unauthorized;
+						}
+						else
+						{
+							context.Response.Redirect("/Account/login");
+						}
 						return Task.CompletedTask;
 					}
 				};
 			});
 
-			//// Добавляем аутентификацию через куки
-			//builder.Services.AddAuthentication(options =>
-			//{
-			//	// Устанавливаем схему аутентификации по умолчанию на куки
-			//	options.DefaultAuthenticateScheme = CookieAuthenticationDefaults.AuthenticationScheme;
-			//	options.DefaultChallengeScheme = CookieAuthenticationDefaults.AuthenticationScheme;
-			//})
-			//.AddCookie(CookieAuthenticationDefaults.AuthenticationScheme, options =>
-			//{
-			//	options.LoginPath = "/Account/login"; // путь для редиректа при неавторизованном доступе
-			//	options.AccessDeniedPath = "/Account/accessdenied"; // путь при отказе в доступе
-			//	options.Cookie.Name = "auth_cookie"; // имя куки (можно изменить)
-			//	options.ExpireTimeSpan = TimeSpan.FromHours(1); // время жизни куки
-			//	options.SlidingExpiration = true; // обновлять время жизни куки при активности
-			//});
+			
 
 			var app = builder.Build();
+
+			app.MapControllerRoute(
+				name: "error",
+				pattern: "Error/{action}",
+				defaults: new { controller = "Error" });
 
 			app.MapControllerRoute(
 				name: "areas",
@@ -110,19 +132,24 @@ namespace EvadminAPI
 			app.UseSwagger();
 			app.UseSwaggerUI();
 
+			app.UseMiddleware<ErrorHandlingMiddlware>();
+
 			app.UseHttpsRedirection();
 
 			app.UseStaticFiles();
 
 			app.UseRouting();
 
+			app.UseWhen(context => !context.Request.Path.StartsWithSegments("/Error"), appBuilder =>
+			{
+				app.UseAuthentication();
+				app.UseAuthorization();
+			});
+
 			app.UseCookiePolicy(new CookiePolicyOptions
 			{
 				MinimumSameSitePolicy = SameSiteMode.Lax
 			});
-
-			app.UseAuthentication();
-			app.UseAuthorization();
 
 			app.MapControllers();
 

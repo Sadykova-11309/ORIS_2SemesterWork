@@ -1,0 +1,122 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="description" content="">
+	<meta name="author" content="">
+	<link rel="icon" href="https://ev-admin-dashboard-template.multipurposethemes.com/bs5/images/favicon.ico">
+
+	<title>@ViewData["Title"] - EV Admin</title>
+
+	<!-- Vendors Style-->
+	<link rel="stylesheet" href="../src/css/vendors_css.css">
+
+	<!-- Style-->
+	<link rel="stylesheet" href="../src/css/style.css">
+	<link rel="stylesheet" href="../src/css/skin_color.css">
+	<link rel="stylesheet" href="../src/css/custom.css">
+	<link href="../../../../../cdn.jquery.app/jqueryscripttop.css" rel="stylesheet" type="text/css">
+
+</head>
+
+<body class="hold-transition light-skin sidebar-mini theme-primary fixed">
+
+	<div class="wrapper">
+		<div id="loader"></div>
+
+		<header class="main-header">
+			<div class="d-flex align-items-center logo-box justify-content-start">
+				<!-- Logo -->
+				<a class="logo">
+					<!-- logo-->
+					<div class="logo-mini w-40">
+						<span class="light-logo"><img src="../../../images/logo-letter.png" alt="logo"></span>
+						<span class="dark-logo"><img src="../../../images/logo-white-letter.png" alt="logo"></span>
+					</div>
+					<div class="logo-lg">
+						<span class="light-logo"><img src="../../../images/logo-light-text.png" alt="logo"></span>
+						<span class="dark-logo"><img src="../../../images/logo-text.png" alt="logo"></span>
+					</div>
+				</a>
+			</div>
+			<!-- Header Navbar -->
+			<nav class="navbar navbar-static-top">
+				<!-- Sidebar toggle button-->
+				<div class="app-menu">
+					<ul class="header-megamenu nav">
+						<li class="btn-group nav-item">
+							<a href="#" class="waves-effect waves-light nav-link push-btn btn-primary-light" data-toggle="push-menu" role="button">
+								<i data-feather="menu"></i>
+							</a>
+						</li>
+						
+					</ul>
+				</div>
+
+				<div class="navbar-custom-menu r-side">
+					<ul class="nav navbar-nav">
+						<li class="dropdown notifications-menu btn-group">
+							<label class="switch">
+								<a class="waves-effect waves-light btn-primary-light svg-bt-icon">
+									<input type="checkbox" data-mainsidebarskin="toggle" id="toggle_left_sidebar_skin">
+									<span class="switch-on"><i data-feather="moon"></i></span>
+									<span class="switch-off"><i data-feather="sun"></i></span>
+								</a>
+							</label>
+						</li>
+						<li class="btn-group nav-item d-xl-inline-flex d-none">
+							<a href="#" data-provide="fullscreen" class="waves-effect waves-light nav-link btn-primary-light svg-bt-icon" title="Full Screen">
+								<i data-feather="maximize"></i>
+							</a>
+						</li>
+					</ul>
+				</div>
+			</nav>
+		</header>
+
+        <!-- Динамический сайдбар -->
+        @await Component.InvokeAsync("Sidebar")
+
+        <!-- Контент страницы -->
+        @RenderBody()
+
+		<footer class="main-footer bt-1">
+			<div class="pull-right d-none d-sm-inline-block">
+				<ul class="nav nav-primary nav-dotted nav-dot-separated justify-content-center justify-content-md-end">
+					<li class="nav-item">
+						<a class="nav-link" href="#" target="_blank">Purchase Now</a>
+					</li>
+				</ul>
+			</div>
+			&copy; <script>document.write(new Date().getFullYear())</script> <a href="https://www.multipurposethemes.com/">Multipurpose Themes</a>. All Rights Reserved.
+		</footer>
+    </div>
+
+	<script type="text/javascript" src="../../../../../cdnjs.cloudflare.com/ajax/libs/jQuery-slimScroll/1.3.8/jquery.slimscroll.min.js"></script>
+	<!-- Vendor JS -->
+	<script src="../src/js/vendors.min.js"></script>
+	<script src="../src/js/pages/chat-popup.js"></script>
+	<script src="../../../assets/icons/feather-icons/feather.min.js"></script>
+
+	<script src="../../../assets/vendor_components/apexcharts-bundle/dist/apexcharts.js"></script>
+	<script src="../../../assets/vendor_components/raphael/raphael.min.js"></script>
+	<script src="../../../assets/vendor_components/morris.js/morris.min.js"></script>
+	<script src="../../../assets/vendor_components/moment/min/moment.min.js"></script>
+	<script src="../../../assets/vendor_components/jquery-knob/js/jquery.knob.js"></script>
+	<script src="../../../assets/vendor_components/echarts/dist/echarts-en.min.js"></script>
+
+
+
+
+	<!-- EV Admin App -->
+	<script src="../src/js/demo.js"></script>
+	<script src="../src/js/template.js"></script>
+	<script src="../src/js/pages/management.js"></script>
+	<script src="../src/js/pages/widget-inline-charts.js"></script>
+
+	@await RenderSectionAsync("Scripts", required: false)
+
+</body>
+</html>>

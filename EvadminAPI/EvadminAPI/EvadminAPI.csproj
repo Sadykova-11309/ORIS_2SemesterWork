@@ -39,9 +39,14 @@
     <None Include="Views\Account\registration_form.cshtml">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
+    <None Include="Views\Error\404.cshtml" />
+    <None Include="Views\Error\500.cshtml" />
+    <None Include="Views\Session\session_form.cshtml" />
   </ItemGroup>
 
   <ItemGroup>
+    <ProjectReference Include="..\EvadminAPI.Contracts\EvadminAPI.Contracts.csproj" />
+    <ProjectReference Include="..\EvadminAPI.DataBase\EvadminAPI.DataBase.csproj" />
     <ProjectReference Include="..\EvadminAPI.Services\EvadminAPI.Services.csproj" />
   </ItemGroup>
 
@@ -49,7 +54,7 @@
     <Content Update="Views\Account\login.cshtml">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
-    <Content Update="Views\Account\register.cshtml">
+    <Content Update="wwwroot\js\registerOwner.js">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
   </ItemGroup>

@@ -35,14 +35,22 @@ namespace EvadminAPI.DataBase.Migrations
                     b.Property<int>("Cost")
                         .HasColumnType("integer");
 
-                    b.Property<string>("End_time")
+                    b.Property<string>("Date")
                         .IsRequired()
                         .HasColumnType("text");
 
-                    b.Property<int>("Energy_consumed")
+                    b.Property<int>("Energy")
                         .HasColumnType("integer");
 
-                    b.Property<string>("Start_time")
+                    b.Property<string>("Info")
+                        .IsRequired()
+                        .HasColumnType("text");
+
+                    b.Property<string>("Location")
+                        .IsRequired()
+                        .HasColumnType("text");
+
+                    b.Property<string>("Number")
                         .IsRequired()
                         .HasColumnType("text");
 
@@ -68,6 +76,12 @@ namespace EvadminAPI.DataBase.Migrations
 
                     b.Property<int>("Distance")
                         .HasColumnType("integer");
+
+                    b.Property<double>("Latitude")
+                        .HasColumnType("double precision");
+
+                    b.Property<double>("Longitude")
+                        .HasColumnType("double precision");
 
                     b.Property<string>("Name")
                         .IsRequired()

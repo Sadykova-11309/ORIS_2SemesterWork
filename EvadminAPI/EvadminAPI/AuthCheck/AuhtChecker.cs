@@ -1,6 +1,9 @@
-﻿using EvadminAPI.Infrastucture;
+﻿using EvadminAPI.DataBase.Models;
+using EvadminAPI.Infrastucture;
+using Microsoft.AspNetCore.Authentication.Cookies;
 using Microsoft.AspNetCore.Authentication.JwtBearer;
 using Microsoft.IdentityModel.Tokens;
+using System.Security.Claims;
 using System.Text;
 
 namespace EvadminAPI.AuthCheck

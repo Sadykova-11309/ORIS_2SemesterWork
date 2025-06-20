@@ -10,6 +10,8 @@ namespace EvadminAPI.Services.Mapping
 		{
 			this.CreateMap<LoginContract, UserModel>();
 			this.CreateMap<RegisterContract, UserModel>();
+			this.CreateMap<StationContract, ChargingStationModel>();
+			this.CreateMap<SessionContract, ChargingSessionModel>();
 		}
 	}
 }

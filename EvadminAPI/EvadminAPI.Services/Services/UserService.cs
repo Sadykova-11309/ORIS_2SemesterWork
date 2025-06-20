@@ -3,6 +3,9 @@ using EvadminAPI.Contracts.Contracts;
 using EvadminAPI.DataBase.Models;
 using EvadminAPI.DataBase.Repositories.Interfaces;
 using EvadminAPI.Infrastucture;
+using Microsoft.AspNetCore.Authentication.Cookies;
+using Microsoft.AspNetCore.Http;
+using System.Security.Claims;
 
 namespace EvadminAPI.Services.Services
 {

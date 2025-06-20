@@ -11,15 +11,17 @@ namespace EvadminAPI.DataBase.Models
 	public class ChargingSessionModel
 	{
 		public Guid Id { get; set; }
+		public string Number { get; set; }
+		public string Date { get; set; }
 		public string Client_name { get; set; }
-		public string Start_time { get; set; }
-		public string End_time { get; set; }
-		public int Energy_consumed { get; set; }
+		public string Location { get; set; }
+		public string Info { get; set; }
+		public int Energy { get; set; }
 		public int Cost { get; set; }
 		public string Status { get; set; }
-		public Guid Station_id { get; set; }
 
-		[ForeignKey("Station_id")]
+		[ForeignKey("Station")]
+		public Guid Station_id { get; set; }
 		public ChargingStationModel Station	{ get; set; }
 
 		public static ChargingSessionModel CreateModel(ChargingSessionModel model)
@@ -27,10 +29,11 @@ namespace EvadminAPI.DataBase.Models
 			return new ChargingSessionModel()
 			{
 				Id = Guid.NewGuid(),
+				Number = model.Number,
+				Date = model.Date,
 				Client_name = model.Client_name,
-				Start_time = model.Start_time,
-				End_time = model.End_time,
-				Energy_consumed = model.Energy_consumed,
+				Location = model.Location,
+				Info = model.Info,
 				Cost = model.Cost,
 				Status = model.Status,
 				Station_id = model.Station_id,
@@ -39,7 +42,3 @@ namespace EvadminAPI.DataBase.Models
 		}
 	}
 }
-
-
-//`id`, `station_id` (FK), `client_name`, `start_time` (дата/время начала), `end_time` (дата/время окончания), `energy_consumed` (кВт),
-//	`cost` (рассчитывается: `energy_consumed* station.price`), `status` (`active` | `completed`).

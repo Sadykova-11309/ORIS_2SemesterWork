@@ -1,0 +1,97 @@
+@{
+	Layout = "_Layout"; // Указывает на общий Layout
+	ViewData["Title"] = "Station Form";
+}
+<div class="content-wrapper">
+    <div class="container-full">
+        <div class="content-header">
+            <div class="d-flex align-items-center">
+                <div class="me-auto">
+                    <h4 class="page-title">Station Form</h4>
+                </div>
+            </div>
+        </div>
+
+        <section class="content">
+            <div class="row">
+                <div class="col-12">
+                    <div class="card">
+                        <div class="card-body">
+                            <h4 class="header-title">New Station</h4>
+
+                            <!-- контейнер для flash‑сообщений -->
+                            <div id="alertBox" class="alert d-none"></div>
+
+                            <form id="stationForm" asp-antiforgery="true">
+                                <div class="row">
+                                    <!-- LEFT column -->
+                                    <div class="col-lg-6">
+                                        <div class="mb-3">
+                                            <label class="form-label" for="name">Charger Name</label>
+                                            <input type="text" class="form-control" id="name" name="Name" required>
+                                        </div>
+                                        <div class="mb-3">
+                                            <label class="form-label" for="distance">Distance (mi)</label>
+                                            <input type="number" class="form-control" id="distance" name="Distance" min="0" required>
+                                        </div>
+                                        <div class="mb-3">
+                                            <label class="form-label" for="type">Charger Type</label>
+                                            <select class="form-select" id="type" name="Type" required>
+                                                <option value="" disabled selected hidden>Select type</option>
+                                                <option value="AC">AC</option>
+                                                <option value="DC">DC</option>
+                                            </select>
+                                        </div>
+                                        <div class="mb-3">
+                                            <label class="form-label" for="price">Price ($/kW)</label>
+                                            <input type="number" class="form-control" id="price" name="Price" min="0" required>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-6">
+                                        <div class="mb-3">
+                                            <label class="form-label" for="slot">Slot</label>
+                                            <select class="form-select" id="slot" name="Slot" required>
+                                                <option value="" disabled selected hidden>Select slot</option>
+                                                <option>1</option>
+                                                <option>2</option>
+                                                <option>3</option>
+                                                <option>4</option>
+                                                <option>5</option>
+                                            </select>
+                                        </div>
+                                        <div class="mb-3">
+                                            <label class="form-label" for="status">Status</label>
+                                            <select class="form-select" id="status" name="Status" required>
+                                                <option value="" disabled selected hidden>Select status</option>
+                                                <option value="available">available</option>
+                                                <option value="unavailable">unavailable</option>
+                                            </select>
+                                        </div>
+                                        <div class="mb-3">
+                                            <label class="form-label" for="name">Latitude</label>
+                                            <input type="text" class="form-control" id="latitude" name="Latitude" required>
+                                        </div>
+                                        <div class="mb-3">
+                                            <label class="form-label" for="name">Longitude</label>
+                                            <input type="text" class="form-control" id="longitude" name="Longitude" required>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="text-end">
+                                    <button type="submit" id="submitBtn" class="btn btn-primary">ADD STATION</button>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+</div>
+                                                
+                                    
+
+@section Scripts {
+    <script src="~/js/station_create.js?v=1.0.1" defer></script>
+}
