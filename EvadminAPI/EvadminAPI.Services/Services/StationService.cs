@@ -71,8 +71,6 @@ namespace EvadminAPI.Services.Services
 		{
 			var station = await _repository.GetById(stationId);
 			if (station == null) return null;
-
-			// manager can view any station; owner can view only own stations
 			if (user.IsInRole("manager") || station.Owner_id == user.GetUserId())
 				return station;
 
@@ -82,12 +80,10 @@ namespace EvadminAPI.Services.Services
 		public async Task<List<ChargingStationModel>> GetAllAsync(ClaimsPrincipal user)
 		{
 			var stations = await _repository.GetAll();
-			// Для менеджера возвращаем все станции
 			if (user.IsInRole("manager"))
 			{
 				return stations;
 			}
-			// Для обычного пользователя фильтруем по владельцу
 			var userId = user.GetUserId();
 			return stations.Where(s => s.Owner_id == userId).ToList();
 		}

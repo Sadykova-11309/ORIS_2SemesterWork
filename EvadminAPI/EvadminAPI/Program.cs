@@ -77,7 +77,6 @@ namespace EvadminAPI
 					options.JsonSerializerOptions.Converters.Add(new JsonStringEnumConverter());
 				});
 
-			// ����������� ������������ ��������������
 			builder.Services.AddAuthentication(options =>
 			{
 				options.DefaultScheme = CookieAuthenticationDefaults.AuthenticationScheme;
@@ -93,12 +92,10 @@ namespace EvadminAPI
 				options.ExpireTimeSpan = TimeSpan.FromHours(1);
 				options.SlidingExpiration = true;
 
-				// ���������� ������ ��������� ��� ����������
-				options.Cookie.SecurePolicy = CookieSecurePolicy.None; // ��������� HTTP
-				options.Cookie.SameSite = SameSiteMode.Lax;           // ��������� cross-site
-				options.Cookie.HttpOnly = true;                       // ������ �� XSS
+				options.Cookie.SecurePolicy = CookieSecurePolicy.None;
+				options.Cookie.SameSite = SameSiteMode.Lax;           
+				options.Cookie.HttpOnly = true;                      
 
-				// �������������� ��������� ��� �������
 				options.Events = new CookieAuthenticationEvents
 				{
 					OnRedirectToLogin = context =>

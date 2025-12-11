@@ -38,14 +38,12 @@ namespace EvadminAPI.Services.Services
 			await _context.Stations
 				.CountAsync(s => s.Status == "unavailable");
 
-		// Методы для SumAsync
 		public async Task<decimal> SumSessionEnergyAsync() =>
 			await _context.Sessions.SumAsync(s => s.Energy);
 
 		public async Task<decimal> SumSessionCostAsync() =>
 			await _context.Sessions.SumAsync(s => s.Cost);
 
-		// Полный метод для получения метрик
 		public async Task<ManagerMetrics> GetMetricsAsync()
 		{
 			return new ManagerMetrics

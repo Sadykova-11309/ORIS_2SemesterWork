@@ -29,7 +29,7 @@ namespace EvadminAPI.Services.Services
 			}
 
 			await _userService.Register(user);
-			return null; // Успех
+			return null; 
 		}
 
 		public async Task<string> Login(LoginContract user)
@@ -47,7 +47,7 @@ namespace EvadminAPI.Services.Services
 			}
 
 			await Authenticate(userModel);
-			return null; // Успех
+			return null; 
 		}
 
 		private async Task Authenticate(UserModel user)
